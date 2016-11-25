@@ -1,7 +1,7 @@
 {
     "plugins": [
         "comment",
-        "-tufte"
+        "tufte"
     ],
     "pluginsConfig": {
         "comment": {
