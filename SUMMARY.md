@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Introducción](introduccion.md)
+* [Parte 1: Introducción a OSM](01.Intro-OSM/README.md)
+* [Información espacial](01.Intro-OSM/info-espacial.md)
 * [Capítulo 1](Parte01/capítulo-1.md)
-* [Capítulo 2](Parte01/capítulo-2.md)
 * [First Chapter](chapter1.md)
 
