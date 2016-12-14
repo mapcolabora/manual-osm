@@ -1,4 +1,4 @@
-# ¿Por qué es tan importante OSM? \/ ¿Qué hace grande a OSM?
+# ¿Por qué es tan importante OSM? / ¿Qué hace grande a OSM?
 
 
 

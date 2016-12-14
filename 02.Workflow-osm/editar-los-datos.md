@@ -2,10 +2,10 @@
 
 
 
-* Etiquetar: [https:\/\/wiki.openstreetmap.org\/wiki\/ES:Gu%C3%ADa\_del\_principiante\_1.3](https://wiki.openstreetmap.org/wiki/ES:Gu%C3%ADa_del_principiante_1.3) -en el índice de la wiki lo pone separado pero ambos apuntan al mismo sitio\)
+* Etiquetar: https://wiki.openstreetmap.org/wiki/ES:Gu%C3%ADa_del_principiante_1.3 -en el índice de la wiki lo pone separado pero ambos apuntan al mismo sitio
 * Editores
-  * ID [http:\/\/learnosm.org\/en\/beginner\/id-editor\/](http://learnosm.org/en/beginner/id-editor/)
-  * JOSM [http:\/\/learnosm.org\/en\/josm\/](http://learnosm.org/en/josm/)
-  * Otros editores \(solo mención\)
+  * ID http://learnosm.org/en/beginner/id-editor/
+  * JOSM http://learnosm.org/en/josm/
+  * Otros editores (solo mención)
 
 
