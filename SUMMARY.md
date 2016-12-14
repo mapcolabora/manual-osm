@@ -14,6 +14,4 @@
     * [Ver tu trabajo en el mapa](02.Workflow-osm/ver-mapas.md)
 * [Parte 3: Recetas](03.Recetas/README.md)
     * [Receta ejemplo](03.Recetas/receta-ejemplo.md)
-* [Capítulo 1](Parte01/capítulo-1.md)
-* [First Chapter](chapter1.md)
 
