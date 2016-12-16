@@ -1,6 +1,4 @@
-#  Receta de prueba de autobuses
-
-**Cómo taguear las paradas de bus en OSM**
+# **Cómo taguear las paradas de bus en OSM**
 
 Por: Héctor Ochoa, CC-BY-SA
 
@@ -37,6 +35,7 @@ Un único nodo dónde para el bus en la vía con:
 Mapeado intermedio \(recomendado\):
 
 * Un nodo dónde para el bus en la vía con:
+
   * `public\_transport=stop\_position`
   * `bus=yes`
   * `Un nodo dónde esperan los viajeros con:`
@@ -52,6 +51,7 @@ Mapeado intermedio \(recomendado\):
   * `bench=yes/no`
 
 * Una relación con ambos nodos:
+
   * `public\_transport=stop\_area`
   * `network=Autobuses Urbanos de Zaragoza`
   * `operator=Auzsa`
@@ -60,13 +60,16 @@ Mapeado intermedio \(recomendado\):
   * `Mapeado avanzado:`
 
 * Un nodo dónde para el bus en la vía con:
+
   * `public\_transport=stop\_position`
   * `bus=yes`
 
 * Un nodo dónde está el poste para que las aplicaciones con el antiguo esquema lo reconozcan:\`
+
   * `highway=bus\_stop`
 
 * Una vía dónde esperan los viajeros con:
+
   * `public\_transport=platform`
   * `bus=yes`
   * `.`
