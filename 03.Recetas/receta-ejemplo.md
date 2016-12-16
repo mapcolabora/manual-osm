@@ -1,3 +1,5 @@
+(Puedes copiar esta receta y usarla como base para desarrollar una nueva)
+
 # Título de la receta
 
 Por: Autor 1, Autor 2... \(nombre de los autores\)
