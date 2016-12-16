@@ -1,6 +1,6 @@
 # Recoger datos
 
-Referencia: [https:\/\/wiki.openstreetmap.org\/wiki\/ES:Beginners\_Guide\_1.1](https://wiki.openstreetmap.org/wiki/ES:Beginners_Guide_1.1) \(no coincide exactamente con este planteamiento\)
+Referencia: https://wiki.openstreetmap.org/wiki/ES:Beginners_Guide_1.1 \(no coincide exactamente con este planteamiento\)
 
 ## Contenido:
 
