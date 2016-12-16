@@ -2,7 +2,7 @@
     "plugins": [
         "comment",
         "tufte",
-        "page-toc"
+        "toc"
     ],
     "pluginsConfig": {
         "comment": {
