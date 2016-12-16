@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introducción](README.md)
 * [Parte 1: Introducción a OSM](01.Intro-OSM/README.md)
     * [Información espacial](01.Intro-OSM/info-espacial.md)
     * [OSM, mucho más que un mapa](01.Intro-OSM/osm.md#osm-más-que-un-mapa)
