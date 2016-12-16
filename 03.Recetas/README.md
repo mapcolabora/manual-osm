@@ -6,29 +6,21 @@ Aquí pondremos una breve explicación de los contenidos que vamos a encontrar e
 
 A modo de ejemplo, y sin ningún orden específico podríamos poner estas recetas:
 
-* Ciudad \(no creo que tenga que ser un grupo en el índice, es para tenerlo claro yo\)
-
+* Ciudad (no creo que tenga que ser un grupo en el índice, es para tenerlo claro yo)
   * Añadir comercios
   * Añadir notas
   * Incorporar datos de campo
-
     * Fieldpapers
     * Tracks
-
   * Transportes públicos
-
   * Edificios
-
   * Accesibilidad
-  * Calcar del fotografías aéreas [http:\/\/learnosm.org\/en\/josm\/aerial-imagery\/](http://learnosm.org/en/josm/aerial-imagery/) \(aquí podemos poner la explicación de por qué el PNOA mola más, que tanto le gusta a Miguel\)
-
+  * Mapa de crianza
+  * Calcar del fotografías aéreas http://learnosm.org/en/josm/aerial-imagery (aquí podemos poner la explicación de por qué el PNOA mola más, que tanto le gusta a Miguel)
 * Montaña
-
   * Senderos -&gt; apuntes de Miguel
   * Añadir tracks
-
 * Avanzado
-
   * Embeber un mapa de OSM en una web
   * Hacer consultas a la base de datos \(Overpass\) \(tendría que tener un nombre más claro: "Cómo saber los puntos de acceso wifi de una ciudad" o "Cómo conocer, en tiempo real, los comercios que están adaptados para silla de ruedas"...\) -&gt; [http:\/\/learnosm.org\/en\/osm-data\/getting-data\/](http://learnosm.org/en/osm-data/getting-data/) \(en
   * Visualizar datos concretos \(uMap, overpass turbo\)
@@ -37,11 +29,12 @@ A modo de ejemplo, y sin ningún orden específico podríamos poner estas receta
   * Diseñar un mapa: [http:\/\/learnosm.org\/en\/map-design\/](http://learnosm.org/en/map-design/) \(esta guía es para usar mapbox\)
   * Importaciones
 
-
 ## Procedimiento
 
 1. Copiar el archivo `03.Recetas\receta-ejemplo.md` dentro de la carpeta `03.Recetas`
 2. Renombrarlo por lo que queráis
 3. Editarlo
 4. En caso de querer añadir imágenes, metedlas en la carpeta `03.Recetas/img`
+
+
 
