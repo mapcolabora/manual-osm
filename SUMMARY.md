@@ -13,6 +13,6 @@
     * [Editar los datos](02.Workflow-osm/editar-los-datos.md)
     * [Ver tu trabajo en el mapa](02.Workflow-osm/ver-mapas.md)
 * [Parte 3: Recetas](03.Recetas/README.md)
-    * [Receta ejemplo](03.Recetas/receta-ejemplo.md)
+    * [Receta ejemplo \(Plantilla\)](03.Recetas/receta-ejemplo.md)
     * [Receta de prueba buses](03.Recetas/receta-de-prueba-buses.md)
 
