@@ -25,5 +25,6 @@ Hay muchas maneras de participar:
 * Redactando capítulos nuevos
 * Uniéndote a algún grupo para redactar contenidos
 
+Para saber los pormenores de cómo participar, hemos elaborado [esta mini-guía de participación](https://www.gitbook.com/book/mapcolabora/meta-manual/details) en la que se detallan los procedimientos y que deberías leer como primer paso previo a participar.
 
 
