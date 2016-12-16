@@ -2,8 +2,6 @@
 
 This file serves as your book's preface, a great place to describe your book's content and ideas.
 
-<!-- toc -->
-
 ## ¿Por qué un libro colaborativo de OSM? {#por-qué}
 
 Es cierto que hay mucha información sobre OSM y podría parecer redudante: entre otros tenemos la [wiki](http://wiki.openstreetmap.org) \(Tanto en inglés como en español\), o recursos como [learnosm](http://learnosm.org). Sin embargo, aunque son recursos muy valiosos a menudo o no están totalmente disponibles en español o bien para alguien que se quiere iniciar en OSM puede que le resulte abrumadora toda la información disponible \(y no siempre estructurada\).
