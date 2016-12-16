@@ -74,7 +74,7 @@ Mapeado intermedio (recomendado):
   * `shelter=yes/no`
   * `bench=yes/no`
 
-En el caso en el que se quiera dibujar la marquesina como área, quitar las tags shelter y bench de la plataforma y dibujarla con las tags:
+En el caso en el que se quiera dibujar la marquesina como área, quitar las tags `shelter` y `bench` de la plataforma y dibujarla con las tags:
 * `amenity=shelter`
 * `shelter\_type=public\_transport`
 * `bin=yes/no`
