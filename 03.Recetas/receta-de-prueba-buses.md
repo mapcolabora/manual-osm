@@ -95,9 +95,11 @@ Una relación con todo lo anterior:
 * `name=\(el nombre de la parada\)`
 * `ref=\(el número de poste\)`
 
-
-
-
-
 NOTA: Quizás estaría bien poner también el nombre, red y operador en el _stop\_position_ y en la _platform_, para que sea reconocido por más aplicaciones. En la wiki no queda claro.
+
+¿Recomendar plugins de transporte público para JOSM?
+
+https://wiki.openstreetmap.org/wiki/JOSM/Plugins/public\_transport
+
+https://wiki.openstreetmap.org/wiki/JOSM/Plugins/CustomizePublicTransportStop &lt;= Este parece sencillo para las paradas, e implementa lo de la nota
 
