@@ -1,13 +1,12 @@
-# **Cómo taguear las paradas de bus en OSM**
+# **Cómo etiquetar las paradas de bus en OSM**
 
-Por: Héctor Ochoa, CC-BY-SA
+Por: Héctor Ochoa
 
 Problemas:
 
 * Nuevo esquema de transporte público \(aceptado hace 2 años\)
 
-* La gran mayoría de apps no lo aceptan aún
-
+* La gran mayoría de aplicaciones no lo aceptan aún
 
 Solución: Hacer una mezcla entre ambos esquemas.
 
@@ -57,7 +56,8 @@ Mapeado intermedio \(recomendado\):
   * `operator=Auzsa`
   * `name=\(el nombre de la parada\)`
   * `ref=\(el número de poste\)`
-  * `Mapeado avanzado:`
+
+Mapeado avanzado:
 
 * Un nodo dónde para el bus en la vía con:
 
@@ -80,7 +80,6 @@ Mapeado intermedio \(recomendado\):
   * `shelter=yes/no`
   * `bench=yes/no`
 
-
 En el caso en el que se quiera dibujar la marquesina como área, quitar las tags `shelter` y `bench` de la plataforma y dibujarla con las tags:
 
 * `amenity=shelter`
@@ -97,4 +96,8 @@ Una relación con todo lo anterior:
 * `ref=\(el número de poste\)`
 
 
+
+
+
+NOTA: Quizás estaría bien poner también el nombre, red y operador en el _stop\_position_ y en la _platform_, para que sea reconocido por más aplicaciones. En la wiki no queda claro.
 
