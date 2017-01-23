@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "comment"
+        "comment",
+        "footnote-string-to-number"
     ],
     "pluginsConfig": {
         "comment": {
