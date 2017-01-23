@@ -102,4 +102,4 @@ NOTA: Quizás estaría bien poner también el nombre, red y operador en el _stop
 [https://wiki.openstreetmap.org/wiki/JOSM/Plugins/CustomizePublicTransportStop](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/CustomizePublicTransportStop) &lt;= Este parece sencillo para las paradas, e implementa lo de la nota
 
 [^nuevoesquema]: El 29 de octubre de 2010 se hizo una propuesta para cambiar el sistema de etiquetado de transporte que se venía utilizando hasta el momento, y durante el 31 de marzo de 2011 hasta el 20 de abril del mismo año se realizaron votaciones que dieron como resultado el nuevo esquema de etiquetado. Dicho proceso está documentado en este enlace: https://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport
-2011-04-20 
+
