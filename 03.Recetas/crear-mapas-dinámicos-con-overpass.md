@@ -1,4 +1,4 @@
-# Crear mapas dinámicos con umaps
+# Crear mapas dinámicos con uMap
 
 Por: Héctor Ochoa
 

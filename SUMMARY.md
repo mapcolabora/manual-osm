@@ -15,5 +15,5 @@
 * [Parte 3: Recetas](03.Recetas/README.md)
     * [Receta ejemplo \(Plantilla\)](03.Recetas/receta-ejemplo.md)
     * [Etiquetado de paradas de bus](03.Recetas/receta-de-prueba-buses.md)
-    * [Crear mapas dinámicos en uMaps](03.Recetas/crear-mapas-dinámicos-con-overpass.md)
+    * [Crear mapas dinámicos en uMap](03.Recetas/crear-mapas-dinámicos-con-overpass.md)
 
