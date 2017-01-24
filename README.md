@@ -1,6 +1,6 @@
 # Libro colaborativo de Introducción a OSM
 
-This file serves as your book's preface, a great place to describe your book's content and ideas.
+Tienes delante un manual de introducción a OpenStreetMap realizado de forma colaborativa y abierta que surge como iniciativa del grupo residente de Zaragoza Activa "[Mapeado Colaborativo](http://blogzac.es/category/think-zac-las-armas/mapeado-colaborativo/)" para tratar de romper las barreras de acceso a OSM y ponerlo al alcance de todo el mundo.
 
 ## ¿Por qué un libro colaborativo de OSM?
 
