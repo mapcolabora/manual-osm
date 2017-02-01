@@ -6,7 +6,10 @@ Aquí pondremos una breve explicación de los contenidos que vamos a encontrar e
 
 A modo de ejemplo, y sin ningún orden específico podríamos poner estas recetas:
 
-* Ciudad (no creo que tenga que ser un grupo en el índice, es para tenerlo claro yo)
+* JOSM
+  * Añadir la cuenta de usuario de OSM en JOSM
+  * Añadir plugins a JOSM -&gt; poner en el ejemplo PNOA y Catastro.
+* Ciudad \(no creo que tenga que ser un grupo en el índice, es para tenerlo claro yo\)
   * Añadir comercios
   * Añadir notas
   * Incorporar datos de campo
@@ -16,7 +19,7 @@ A modo de ejemplo, y sin ningún orden específico podríamos poner estas receta
   * Edificios
   * Accesibilidad
   * Mapa de crianza
-  * Calcar del fotografías aéreas http://learnosm.org/en/josm/aerial-imagery (aquí podemos poner la explicación de por qué el PNOA mola más, que tanto le gusta a Miguel)
+  * Calcar del fotografías aéreas [http://learnosm.org/en/josm/aerial-imagery](http://learnosm.org/en/josm/aerial-imagery) \(aquí podemos poner la explicación de por qué el PNOA mola más, que tanto le gusta a Miguel\)
 * Montaña
   * Senderos -&gt; apuntes de Miguel
   * Añadir tracks
