@@ -31,8 +31,7 @@ Explicar el procedimiento paso a paso
 
 ### Dibujar
 
-Explicar qué se dibuja primero, cuando se necesita trocear...
-
+Explicar qué se dibuja primero (¿el contorno?), qué criterio utilizar para trocear...
 
 
 
