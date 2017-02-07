@@ -47,7 +47,7 @@ Podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se
 1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
 
 <video width="320" height="200" controls preload> 
-    <source src="03.Recetas/img/edificios-josm-perimetro.webm"></source> 
+    <source src="/img/edificios-josm-perimetro.webm"></source> 
 </video>
 
 
