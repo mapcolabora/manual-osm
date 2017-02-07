@@ -4,10 +4,14 @@ Por: Carlos Cámara, Alejandro Suárez
 
 ## Objetivos
 
-Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los edificios. OSM proporciona una gran flexibilidad que permite conocer 
-Dibujar edificios y etiquetarlos con detalle suficiente para que se visualicen en 3D en otros servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 Maps](http://demo.f4map.com/), tal y como muestra la imagen siguiente con información en 3D de Huesca.
+Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los edificios. En esta receta veremos cómo dibujar la geometría de los edificios y también cómo etiquetarlos con información relativa a las propiedades del edificio. Gracias a este trabajo podremos visualizar, por ejemplo, los edificios en 3D en servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 Maps](http://demo.f4map.com/), tal y como muestra la imagen siguiente con información en 3D de Huesca.
 
-![](/03.Recetas/img/huesca-3d.jpg)
+![Captura de pantalla de Huesca en 3D desde el visor F4 Maps](/03.Recetas/img/huesca-3d.jpg)
+
+{% hint style='alert' %}
+A diferencia de programas como Blender, Sketchup, Freecad... OSM solo puede trabajar en 2D, ya que la única geometría que podemos utilizar son puntos, líneas y áreas. El efecto3D se consigue gracias al uso extensivo de determinadas etiquetas, lo cual es un procedimiento completamente distinto al de modelado 3D.
+{% endhint %}
+
 
 ## Ingredientes
 
