@@ -2,8 +2,7 @@
     "plugins": [
         "comment",
         "footnote-string-to-number",
-        "youtube",
-        "videoplayer"
+        "youtube"
     ],
     "pluginsConfig": {
         "comment": {
