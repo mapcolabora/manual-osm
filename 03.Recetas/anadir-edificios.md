@@ -37,6 +37,7 @@ Lo primero que debemos hacer es dibujar la geometría de los edificios. En este 
 ![](/03.Recetas/img/edificios-josm-catastro.webm)
 
 1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible (podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se activan con la rueda central del ratón).
+[](03.Recetas/img/edificios-josm-perimetro.webm)
 ![](/03.Recetas/img/edificios-josm-perimetro.webm)
 1. Añadir las medianeras de los edificios.
 1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
