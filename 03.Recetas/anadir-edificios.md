@@ -1,3 +1,4 @@
+{% videoplayerscripts %}{% endvideoplayerscripts %}
 # Añadir edificios
 
 Por: Carlos Cámara, Alejandro Suárez
