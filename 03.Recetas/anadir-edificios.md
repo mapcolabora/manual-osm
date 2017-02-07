@@ -39,23 +39,25 @@ Explicar el procedimiento paso a paso
 Lo primero que debemos hacer es dibujar la geometría de los edificios. En este primer paso empezaremos por lo más general (el perímetro) y posteriormente iremos añadiendo más detalles.
 
 1. **Activar las capas de Catastro y PNOA**, que nos servirán de guía en todo momento. Utilizaremos la capa del Catastro para calcar la geometría de los edificios y saber el número de pisos de los edificios[^catastro]. La imagen satélite del PNOA nos servirá, más adelante, para obtener información acerca de las alturas, tipo de cubiertas o materiales.
-![](/03.Recetas/img/edificios-josm-catastro.webm)
-
-1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible (podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se activan con la rueda central del ratón).
-
-![](/03.Recetas/img/edificios-josm-perimetro.webm)
-1. Añadir las medianeras de los edificios.
-1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
-1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
-
-![](03.Recetas/img/edificios-josm-perimetro.webm)
-
-{% videoplayer id="docker-myvideo" width="640" height="480" posterExt="png" %}03.Recetas/img/edificios-josm-perimetro.webm{% endvideoplayer %}
-
-<video width="320" height="200" controls preload> 
-    <source src="03.Recetas/img/edificios-josm-perimetro.webm"></source> 
+<video width="100%" controls preload> 
+    <source src="img/edificios-josm-catastro.webm?raw=true"></source> 
 </video>
 
+1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible.
+{% hint style='tip' %}
+Podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se activan con la rueda central del ratón para obtener una mejor precisión.
+{% endhint %}
+![](/03.Recetas/img/edificios-josm-perimetro.webm)
+1. Añadir las medianeras de los edificios.
+<video width="100%" controls preload> 
+    <source src="img/edificios-josm-perimetro.webm"></source> 
+</video>
+
+1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
+1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
+<video width="100%" controls preload> 
+    <source src="img/edificios-josm-perimetro-02.webm"></source> 
+</video>
 
 ## Crear la relación
 
