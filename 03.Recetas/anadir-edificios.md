@@ -34,7 +34,7 @@ Además de lo anterior, puede facilitarnos mucho trabao los siguientes plugins y
     * Measurement: para obtener información sobre los ángulos que utilizaremos en las cubiertas.
     * [Relation Toolbox](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox)
     * [Terracer](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox): ideal para crear viviendas pareadas (aunque no se ha utilizado en esta receta porque el contexto en el que se sitúa -Centro de Zaragoza- no tiene estas tipologías edificatorias).
-    {% hint style='hint' %}
+    {% hint style='tip' %}
 **Protip:** Puede utilizarse el plugin Terracer para crear matrices de elementos equidistantes, aunque no sean edificios. Un buen ejemplo de ello sería, por ejemplo, una hilera de árboles plantados en un parque o paseo.
 {% endhint %}
 * Presets (para más información sobre qué son los presets y como se instalan, ver receta "Cómo usar presets en JOSM"): 
