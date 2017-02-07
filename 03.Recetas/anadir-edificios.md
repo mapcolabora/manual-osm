@@ -75,10 +75,21 @@ Debemos evitar superponer líneas, incluso aunque nos parezca que el perímetro 
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro.webm"></source> 
 </video>
-1. **Partir el perímetro en segmentos** delimitados por aquellos nodos en los que converjan más de tres aristas para ello. Para ello deberemos seleccionar la línea a dividir y luego, pulsando la tecla `MAY` (Atajo de teclado: `P`)
+1. **Partir el perímetro en segmentos** delimitados por aquellos nodos en los que converjan más de tres aristas para ello. Para ello deberemos hacer lo siguiente:
+    1. seleccionar la línea a dividir
+    1. pulsar la tecla `MAY` y seleccionar aquél o aquellos nodos en los que converjan más de 2 segmentos.  
+    1. ir al menú `Herramientas\Dividir vía` o usar directamente el atacjo de teclado: `P`.
+
+Con esto ya tenemos dibujado todo el perímetro del edificio, solo que está troceado y por tanto no podemos etiquetarlo todavía, dado que las etiquetas de edificios solo pueden ir en áreas cerradas y no sobre elementos lineales o sobre puntos. Y como aún no hemos añadido ninguna etiqueta, no es conveniente subir todavía nuestro trabajo a OSM (si intentamos hacerlo JOSM nos advertirá de que estamos queriendo subir geometría que no está etiquetada).
+
+{% hint style='hint' %}
+Dado que el proceso de crear y etiquetar edificios es relativamente tedioso, es recomendable trabajar en un único edificio a la vez para poder crear changesets relativamente pequeños y que, por tanto, se puedan hacer en poco tiempo. 
+{% endhint %}
 
 
 ### Crear la relación
+
+Las relaciones son una entidad específica de OSM que resulta muy versátil.
 
 1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
 <video width="100%" controls preload> 
