@@ -89,16 +89,16 @@ Dado que el proceso de crear y etiquetar edificios es relativamente tedioso, es 
 {% endhint %}
 
 
-### Crear la relación
+### Convertir segmentos en un edificio
 
 Las relaciones son una entidad específica de OSM que resulta muy versátil ya que permite agrupar elementos que tienen algún aspecto en común y establecer relaciones entre sus miembros. En este caso las utilizaremos para agrupar los segmentos independientes que conforman el perímetro de un edificio y luego le asignaremos las propiedades del edificio. Para ello deberemos realizar lo siguiente:
 
-1. Seleccionar los distintos segmentos que conforman un edificio, asegurándonos que siempre tengamos un polígono cerrado (de lo contrario JOSM nos mostrará una advertencia en el siguiente paso)
+1. **Seleccionar los distintos segmentos** que conforman un edificio, asegurándonos que siempre tengamos un polígono cerrado (de lo contrario JOSM nos mostrará una advertencia en el siguiente paso)
 {% hint style='tip' %}
 Para seleccionar más de un objeto a la vez podemos hacer clic pulsando simultáneamente la tecla `MAY`. En caso de querer deseleccionar algún elemento, podemos pulsar la tecla `CTRL` mientras hacemos clic.
 {% endhint %}
 
-1. Crear una relación a partir de los elementos seleccionados haciendo clic en el menú `Herramientas\Crear multipolígono` o con el atajo de teclado: `CTRL+B`.
+1. **Crear una relación** a partir de los elementos seleccionados haciendo clic en el menú `Herramientas\Crear multipolígono` o con el atajo de teclado: `CTRL+B`.
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro-02.webm"></source> 
 </video>
@@ -109,26 +109,26 @@ En el caso de los edificios que contengan un patio en su interior, deberemos sel
 
 Con los pasos anteriores hemos creado una relación, pero falta decir que dicha relación es en realidad un edificio, para ello deberemos:
 
-1. Seleccionar una vía (línea) que sea parte de la relación que acabamos de crear.
-1. Seleccionar la relación a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
+1. **Seleccionar una vía (línea)** que sea parte de la relación que acabamos de crear.
+1. **Seleccionar la relación** a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
 ![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
 {% hint style='danger' %}
 Hay que tener en cuenta que un elemento puede pertenecer a más de una relación a la vez (en realidad, las medianeras pertenecerán, como mínimo, a dos relaciones, una para cada edificio que separan). Por eso debemos de estar seguros de que seleccionamos la relación que queremos modificar y no otra. Algunas relaciones tienen nombre, lo cual facilita mucho saber qué relación estamos modificando. Una buena práctica consiste en darles nombres a las relaciones, para ello podemos usar la etiqueta `name=<nombre oficial>` (en caso de que tenga un nombre oficial) y para aquellos casos  en los que queremos dar un nombre descriptivo a nivel interno, podemos usar `note=<breve descripción>`.
 {% endhint %}
-1. Añadir las siguientes etiquetas a la relación seleccionada:
+1. **Añadir las siguientes etiquetas** a la relación seleccionada:
     *  `type=multipoligon` (este es un valor fijo añadido automáticamente al crear una relación e indica, precisamente, que se trata de una relación -aka, un polígono virtual) 
     *  `building=<lo que sea>` El valor por defecto será `yes`, sin embargo, ese valor solamente indica que se trata de un edificio, sin indicar de qué tipo se trata. Si queremos ser más concretos podemos especificar el tipo de edificio, como por ejemplo una iglesia (`building=church`), un edificio residencial (`building=residential`), una vivienda aislada (`building=detached`) o un edificio público (`building=public`), entre otros)
     {% hint style='tip' %}
     El listado completo de los valores posibles se encuentra en esta página de la wiki OSM: [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
     {% endhint %}
 
-¡Ahora sí! Ya tenemos una geometría que define un perímetro y le hemos añadido las etiquetas mínimas para definir un edificio. Este sería un buen momento para publicar nuestro changeset y compartirlo con la comunidad de OSM, sin embargo podemos hacer todavía más cosas.
+¡Ahora sí! Ya tenemos una geometría que define un perímetro y le hemos añadido las etiquetas mínimas para definir un edificio. **Este sería un buen momento para publicar nuestro changeset y compartirlo con la comunidad de OSM**, sin embargo podemos hacer todavía más cosas.
 
-### Etiquetar la relación
+### Añadir información 3D
 
 Cada edificio debería tener su relación independiente, reflejando sus características generales:
 
-
+La **altura del edificio**:
 *  `building:levels=<el mínimo>`Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
 *  `height=<la mínima>` Aquí especificamos la altura por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\). 
 
@@ -136,16 +136,15 @@ Cada edificio debería tener su relación independiente, reflejando sus caracter
 Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso de que esta etiqueta no exista, utiliza la regla de multiplicar `x3` el número de pisos (`building:levels`), algo que puede ser una aproximación razonable para muchos edificios de viviendas habituales, pero tremendamente erróneo en edificios singulares como iglesias, que a pesar de tener una sola planta, la nave central suele tener una altura muy superior a los 3 metros.
 {% endhint %}
 
+Otro aspecto interesante son las cubiertas del edificio[^cubiertas]. 
 
+Todo esto funciona de maravilla en edificios relativamente sencillos que tienen siempre la misma altura, el mismo tipo de cubierta, materiales... ¿pero qué ocurre 
 
-OSM utiliza este valor para calcular la altura del edificio, y en caso de que esta etiqueta no exista, utiliza la regla de multiplicar 
-* ...
-
-## Añadir detalles a los edificios
+#### Añadir "partes" con más información a los edificios 
 
 Después si se quiere hilar fino, las partes distintas de cada edificio se hacen con building parts:
 
-* `Building:part=lo que sea`
+* `Building:part=yes`
 * `Building=lo que sea`
 * `Building:levels=el de esa zona `
 * `Height=la de esa zona `
@@ -157,3 +156,5 @@ Después si se quiere hilar fino, las partes distintas de cada edificio se hacen
 Resumirlo brevemente.
 
 [^catastro]: Aunque el Catastro es un documento legal, no hay que confiar ciegamente en él, dado que puede contener información incorrecta o desactualizada. De ahí que sea recomendable contrastarla con otras fuentes o, si tenemos oportunidad, visitando el emplazamiento y conociéndolo de primera mano.
+[^cubiertas]: Este es uno de los temas más complejos
+
