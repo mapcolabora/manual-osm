@@ -51,7 +51,7 @@ Podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se
 
 1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
 1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
-<video width="875" height="525" controls preload> 
+<video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro-02.webm"></source> 
 </video>
 
