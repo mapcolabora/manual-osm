@@ -1,5 +1,3 @@
-\(Puedes copiar esta receta y usarla como base para desarrollar una nueva\)
-
 # Añadir edificios
 
 Por: Alejandro Suárez, Carlos Cámara
