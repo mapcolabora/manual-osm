@@ -120,7 +120,7 @@ Hay que tener en cuenta que un elemento puede pertenecer a más de una relación
     *  `building=<lo que sea>` El valor por defecto será `yes`, sin embargo, ese valor solamente indica que se trata de un edificio, sin indicar de qué tipo se trata. Si queremos ser más concretos podemos especificar el tipo de edificio, como por ejemplo una iglesia (`building=church`), un edificio residencial (`building=residential`), una vivienda aislada (`building=detached`) o un edificio público (`building=public`), entre otros)
     {% hint style='tip' %}
     El listado completo de los valores posibles se encuentra en esta página de la wiki OSM: [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
-{% endhint %}
+    {% endhint %}
 
 ¡Ahora sí! Ya tenemos una geometría que define un perímetro y le hemos añadido las etiquetas mínimas para definir un edificio. Este sería un buen momento para publicar nuestro changeset y compartirlo con la comunidad de OSM, sin embargo podemos hacer todavía más cosas.
 
