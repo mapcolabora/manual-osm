@@ -1,9 +1,10 @@
 # Añadir edificios
 
-Por: Alejandro Suárez, Carlos Cámara
+Por: Carlos Cámara, Alejandro Suárez
 
 ## Objetivos
 
+Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los edificios. OSM proporciona una gran flexibilidad que permite conocer 
 Dibujar edificios y etiquetarlos con detalle suficiente para que se visualicen en 3D en otros servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 Maps](http://demo.f4map.com/), tal y como muestra la imagen siguiente con información en 3D de Huesca.
 
 ![](/03.Recetas/img/huesca-3d.jpg)
@@ -46,6 +47,10 @@ Lo primero que debemos hacer es dibujar la geometría de los edificios. En este 
 ![](03.Recetas/img/edificios-josm-perimetro.webm)
 
 {% videoplayer id="docker-myvideo" width="640" height="480" posterExt="png" %}03.Recetas/img/edificios-josm-perimetro.webm{% endvideoplayer %}
+
+<video width="320" height="200" controls preload> 
+    <source src="03.Recetas/img/edificios-josm-perimetro.webm"></source> 
+</video>
 
 
 ## Crear la relación
