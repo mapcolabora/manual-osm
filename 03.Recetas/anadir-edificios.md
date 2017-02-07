@@ -102,11 +102,17 @@ Para seleccionar más de un objeto a la vez podemos hacer clic pulsando simultá
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro-02.webm"></source> 
 </video>
+{% hint style='tip' %}
+En el caso de los edificios que contengan un patio en su interior, deberemos seleccionar, además, el perímetro cerrado que define el patio. Al crear la relación JOSM le asignará el rol `role=inner` a dicho perímetro para crear así el hueco. 
+{% endhint %}
 
 
- 
->
->Para editar las etiquetas de una relación: selecionas una vía que sea parte de la relación y en el panel de la derecha donde aparecen las etiquetas, haces doble clic en la relación recién creada. En la ventana recién creada puedes editar las etiquetas de la relación y sus miembros. 
+Con los pasos anteriores hemos creado una relación, pero falta decir que dicha relación es en realidad un edificio, para ello deberemos:
+
+1. Seleccionar una vía (línea) que sea parte de la relación que acabamos de crear.
+1. En el panel de la derecha donde aparecen las etiquetas, se mostrará 
+ haces doble clic en la relación recién creada. En la ventana recién creada puedes editar las etiquetas de la relación y sus miembros. 
+![](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
 
 ### Etiquetar la relación
 
@@ -115,10 +121,10 @@ Cada edificio debería tener su relación independiente, reflejando sus caracter
 *  `type=multipoligon` Valor fijo para que se cree una relación 
 *  `building=<lo que sea>`Aquí especificamos el tipo de edificio \(puede ser una iglesia, un edificio residencial, una vivienda aislada o un edificio público, entre otros - para ver los valores posibles referimos a la wiki [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
 *  `building:levels=<el mínimo>`Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
-*  `height=<la máxima` Aquí especificamos la altura por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\). 
+*  `height=<la mínima>` Aquí especificamos la altura por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\). 
 
 {% hint %}
-Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso de que esta etiqueta no exista, utiliza la regla de multiplicar *3 el número de pisos (`building:levels`), algo que puede ser una aproximación razonable para muchos edificios de viviendas habituales, pero tremendamente erróneo en edificios singulares como iglesias, que a pesar de tener una sola planta, la nave central suele tener una altura muy superior a los 3 metros.
+Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso de que esta etiqueta no exista, utiliza la regla de multiplicar `x3` el número de pisos (`building:levels`), algo que puede ser una aproximación razonable para muchos edificios de viviendas habituales, pero tremendamente erróneo en edificios singulares como iglesias, que a pesar de tener una sola planta, la nave central suele tener una altura muy superior a los 3 metros.
 {% endhint %}
 
 
@@ -136,9 +142,6 @@ Después si se quiere hilar fino, las partes distintas de cada edificio se hacen
 * `Height=la de esa zona `
 * ...
 
-### Paso n
-
-Explicar paso n
 
 ## Resumen
 
