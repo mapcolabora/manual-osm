@@ -38,12 +38,14 @@ Además de lo anterior, puede facilitarnos mucho trabao los siguientes plugins y
 **Protip:** Puede utilizarse el plugin Terracer para crear matrices de elementos equidistantes, aunque no sean edificios. Un buen ejemplo de ello sería, por ejemplo, una hilera de árboles plantados en un parque o paseo.
 {% endhint %}
 * Presets (para más información sobre qué son los presets y como se instalan, ver receta "Cómo usar presets en JOSM"): 
-    * **3D buildings** para simplificar el proceso de añadir etiquetas con información en 3D.
-    * Roofs
+    * **Building preset** para simplificar los datos generales de un edificio
+    * **3D Simple Buildings** para simplificar el proceso de añadir etiquetas con información en 3D.
+    
 
-Además, es recomendable tener a mano las siguientes páginas de la wiki de openstreetmap:
+Y por último es recomendable tener a mano las siguientes páginas de la wiki de OpenStreetMap:
 
 * [Key:building](http://wiki.openstreetmap.org/wiki/Key:building) contiene información sobre los tipos de edificios
+* [Simple 3D Buildings](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings)
 * [3D Building](http://wiki.openstreetmap.org/wiki/OSM-4D/3D_building) contiene información sobre cómo etiquetar los edificios para que sean visualizados en OSM
 
 ## Procedimiento
@@ -82,25 +84,27 @@ Debemos evitar superponer líneas, incluso aunque nos parezca que el perímetro 
 
 Con esto ya tenemos dibujado todo el perímetro del edificio, solo que está troceado y por tanto no podemos etiquetarlo todavía, dado que las etiquetas de edificios solo pueden ir en áreas cerradas y no sobre elementos lineales o sobre puntos. Y como aún no hemos añadido ninguna etiqueta, no es conveniente subir todavía nuestro trabajo a OSM (si intentamos hacerlo JOSM nos advertirá de que estamos queriendo subir geometría que no está etiquetada).
 
-{% hint style='hint' %}
+{% hint style='tip' %}
 Dado que el proceso de crear y etiquetar edificios es relativamente tedioso, es recomendable trabajar en un único edificio a la vez para poder crear changesets relativamente pequeños y que, por tanto, se puedan hacer en poco tiempo. 
 {% endhint %}
 
 
 ### Crear la relación
 
-Las relaciones son una entidad específica de OSM que resulta muy versátil.
+Las relaciones son una entidad específica de OSM que resulta muy versátil ya que permite agrupar elementos que tienen algún aspecto en común y establecer relaciones entre sus miembros. En este caso las utilizaremos para agrupar los segmentos independientes que conforman el perímetro de un edificio y luego le asignaremos las propiedades del edificio. Para ello deberemos realizar lo siguiente:
 
-1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
+1. Seleccionar los distintos segmentos que conforman un edificio, asegurándonos que siempre tengamos un polígono cerrado (de lo contrario JOSM nos mostrará una advertencia en el siguiente paso)
+{% hint style='tip' %}
+Para seleccionar más de un objeto a la vez podemos hacer clic pulsando simultáneamente la tecla `MAY`. En caso de querer deseleccionar algún elemento, podemos pulsar la tecla `CTRL` mientras hacemos clic.
+{% endhint %}
+
+1. Crear una relación a partir de los elementos seleccionados haciendo clic en el menú `Herramientas\Crear multipolígono` o con el atajo de teclado: `CTRL+B`.
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro-02.webm"></source> 
 </video>
 
 
-
-Explicar qué elementos deben formar parte de la relación y cómo crearla. Copiado de email en tak-es:
-
->Tendrías que cambiar la existente y crear nuevas. Con josm es fácil, dibuja todas las vías que delimitarán edificios o partes de estás. Después parte las vías (P) en todos los nodos donde intersecten 3 o más vías. Después selecionas todas las vías que delimitan una parte y le das a Ctrl+b ¡Chas! Multipoligono creado. 
+ 
 >
 >Para editar las etiquetas de una relación: selecionas una vía que sea parte de la relación y en el panel de la derecha donde aparecen las etiquetas, haces doble clic en la relación recién creada. En la ventana recién creada puedes editar las etiquetas de la relación y sus miembros. 
 
