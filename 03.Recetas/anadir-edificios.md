@@ -8,7 +8,7 @@ Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los
 
 ![Captura de pantalla de Huesca en 3D desde el visor F4 Maps](/03.Recetas/img/huesca-3d.jpg)
 
-{% hint style='alert' %}
+{% hint style='danger' %}
 A diferencia de programas como Blender, Sketchup, Freecad... OSM solo puede trabajar en 2D, ya que la única geometría que podemos utilizar son puntos, líneas y áreas. El efecto3D se consigue gracias al uso extensivo de determinadas etiquetas, lo cual es un procedimiento completamente distinto al de modelado 3D.
 {% endhint %}
 
