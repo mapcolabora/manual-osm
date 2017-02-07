@@ -110,16 +110,25 @@ En el caso de los edificios que contengan un patio en su interior, deberemos sel
 Con los pasos anteriores hemos creado una relación, pero falta decir que dicha relación es en realidad un edificio, para ello deberemos:
 
 1. Seleccionar una vía (línea) que sea parte de la relación que acabamos de crear.
-1. En el panel de la derecha donde aparecen las etiquetas, se mostrará 
- haces doble clic en la relación recién creada. En la ventana recién creada puedes editar las etiquetas de la relación y sus miembros. 
-![](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
+1. Seleccionar la relación a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
+![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
+{% hint style='danger' %}
+Hay que tener en cuenta que un elemento puede pertenecer a más de una relación a la vez (en realidad, las medianeras pertenecerán, como mínimo, a dos relaciones, una para cada edificio que separan). Por eso debemos de estar seguros de que seleccionamos la relación que queremos modificar y no otra. Algunas relaciones tienen nombre, lo cual facilita mucho saber qué relación estamos modificando. Una buena práctica consiste en darles nombres a las relaciones, para ello podemos usar la etiqueta `name=<nombre oficial>` (en caso de que tenga un nombre oficial) y para aquellos casos  en los que queremos dar un nombre descriptivo a nivel interno, podemos usar `note=<breve descripción>`.
+{% endhint %}
+1. Añadir las siguientes etiquetas a la relación seleccionada:
+    *  `type=multipoligon` (este es un valor fijo añadido automáticamente al crear una relación e indica, precisamente, que se trata de una relación -aka, un polígono virtual) 
+    *  `building=<lo que sea>` El valor por defecto será `yes`, sin embargo, ese valor solamente indica que se trata de un edificio, sin indicar de qué tipo se trata. Si queremos ser más concretos podemos especificar el tipo de edificio, como por ejemplo una iglesia (`building=church`), un edificio residencial (`building=residential`), una vivienda aislada (`building=detached`) o un edificio público (`building=public`), entre otros)
+    {% hint style='tip' %}
+    El listado completo de los valores posibles se encuentra en esta página de la wiki OSM: [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
+{% endhint %}
+
+¡Ahora sí! Ya tenemos una geometría que define un perímetro y le hemos añadido las etiquetas mínimas para definir un edificio. Este sería un buen momento para publicar nuestro changeset y compartirlo con la comunidad de OSM, sin embargo podemos hacer todavía más cosas.
 
 ### Etiquetar la relación
 
 Cada edificio debería tener su relación independiente, reflejando sus características generales:
 
-*  `type=multipoligon` Valor fijo para que se cree una relación 
-*  `building=<lo que sea>`Aquí especificamos el tipo de edificio \(puede ser una iglesia, un edificio residencial, una vivienda aislada o un edificio público, entre otros - para ver los valores posibles referimos a la wiki [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
+
 *  `building:levels=<el mínimo>`Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
 *  `height=<la mínima>` Aquí especificamos la altura por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\). 
 
