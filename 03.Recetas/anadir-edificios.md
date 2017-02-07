@@ -145,7 +145,7 @@ Otro aspecto interesante son las cubiertas del edificio[^cubiertas].
 * `roof:material`
 * ...
 
-{% hint style=tip %}
+{% hint style='tip' %}
 Las cubiertas son uno de los temas más complejos del modelado en 3D de un edificio, y también del etiquetado en OSM. El sistema de etiquetado de cubiertas de OSM permite "modelar" una gran variedad de formas, pero exige ser sistemáticos. Para una descripción completa del sistema de etiquetado referimos a la lectura de los siguientes enlaces de la wiki:
 * [Sección de "cubiertas" en la entrada 3D-Buildings](http://wiki.openstreetmap.org/wiki/OSM-4D/3D_building#Roof) 
 * [Roof table](http://wiki.openstreetmap.org/wiki/OSM-4D/Roof_table)
