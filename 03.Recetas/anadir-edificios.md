@@ -138,17 +138,32 @@ Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso
 
 Otro aspecto interesante son las cubiertas del edificio[^cubiertas]. 
 
-Todo esto funciona de maravilla en edificios relativamente sencillos que tienen siempre la misma altura, el mismo tipo de cubierta, materiales... ¿pero qué ocurre 
+* `roof:shape`
+* `roof:direction`
+* `roof:orientation`
+* `roof:material`
+* ...
+
+{% hint style=tip %}
+Las cubiertas son uno de los temas más complejos del modelado en 3D de un edificio, y también del etiquetado en OSM. El sistema de etiquetado de cubiertas de OSM permite "modelar" una gran variedad de formas, pero exige ser sistemáticos. Para una descripción completa del sistema de etiquetado referimos a la lectura de los siguientes enlaces de la wiki:
+* [Sección de "cubiertas" en la entrada 3D-Buildings](http://wiki.openstreetmap.org/wiki/OSM-4D/3D_building#Roof) 
+* [Roof table](http://wiki.openstreetmap.org/wiki/OSM-4D/Roof_table)
+{% endhint %}
+
+Todo esto funciona de maravilla en edificios relativamente sencillos que tienen siempre la misma altura, el mismo tipo de cubierta, materiales... ¿pero qué ocurre con aquellos edificios cuyas propiedades no son constantes? Pues para eso está el siguiente paso.
 
 #### Añadir "partes" con más información a los edificios 
 
-Después si se quiere hilar fino, las partes distintas de cada edificio se hacen con building parts:
+Para edificios cuyas propiedades (altura, cubiertas, materiales...) no son constantes, deberemos descomponerlo en "partes" que sí mantienen las mismas propiedades. El procedimiento es muy similar al que hemos seguido anteriormente, con la salvedad de que añadiremos nuevas relaciones con la etiqueta `building:part=yes`, tal y como detallamos a continuación:
 
-* `Building:part=yes`
-* `Building=lo que sea`
-* `Building:levels=el de esa zona `
-* `Height=la de esa zona `
-* ...
+1. Dibujar segmentos (vías) que dividan las distintas partes del edificio
+1. Dividir el perímetro 
+1. Etiquetar las partes distintas de cada edificio con las mismas etiquetas que hemos visto anteriormente:
+    * `Building:part=yes`
+    * `Building=lo que sea`
+    * `Building:levels=el de esa zona `
+    * `Height=la de esa zona `
+    * ...
 
 
 ## Resumen
@@ -156,5 +171,5 @@ Después si se quiere hilar fino, las partes distintas de cada edificio se hacen
 Resumirlo brevemente.
 
 [^catastro]: Aunque el Catastro es un documento legal, no hay que confiar ciegamente en él, dado que puede contener información incorrecta o desactualizada. De ahí que sea recomendable contrastarla con otras fuentes o, si tenemos oportunidad, visitando el emplazamiento y conociéndolo de primera mano.
-[^cubiertas]: Este es uno de los temas más complejos
+
 
