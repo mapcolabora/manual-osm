@@ -3,7 +3,8 @@
         "comment",
         "footnote-string-to-number",
         "hints",
-        "youtube"
+        "youtube",
+        "image-captions"
     ],
     "pluginsConfig": {
         "comment": {

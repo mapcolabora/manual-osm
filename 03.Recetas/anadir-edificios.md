@@ -9,21 +9,37 @@ Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los
 ![Captura de pantalla de Huesca en 3D desde el visor F4 Maps](/03.Recetas/img/huesca-3d.jpg)
 
 {% hint style='danger' %}
-A diferencia de programas como Blender, Sketchup, Freecad... OSM solo puede trabajar en 2D, ya que la única geometría que podemos utilizar son puntos, líneas y áreas. El efecto3D se consigue gracias al uso extensivo de determinadas etiquetas, lo cual es un procedimiento completamente distinto al de modelado 3D.
+A diferencia de programas como [Blender](http://blender.org), [Sketchup](http://sketchup.com), [Freecad](http://freecad.org)... OSM solo puede trabajar en 2D, ya que la única geometría que podemos utilizar son puntos, líneas y áreas. El efecto de 3D (o incluso el de 2.5D) se consigue gracias al uso extensivo de determinadas etiquetas, lo cual es un procedimiento completamente distinto al de modelado 3D, algo que puede acarrear cierta confusión para quienes están acostumbrados a usar este tipo de herramientas.
 {% endhint %}
 
 
 ## Ingredientes
 
-Explicar si necesitamos algún material o algo en especial \(ej: "Usaremos JOSM", "necesitaremos fieldpapers para tomar datos"...\)
+Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
 
 * Editor JOSM o iD \(aunque las capturas de pantalla hacen referencia a JOSM, los pasos también pueden reproducirse en iD\)
 * Información de referencia para "calcar":
   * Catastro
   * PNOA
   * ...
-* Plugin
-* Preset de JOSM: 3D buildings para simplificar el proceso de añadir etiquetas con información en 3D.
+  
+  {% hint style='danger' %}
+Para la elección de la referencia deberemos tener en cuenta especialmente tres cosas: 1) que su licencia de uso sea compatible con OSM; 2) las deformaciones derivadas de la proyección -especialmente importante en edificios altos o lugares con pendiente; y 3) que se trate de una fuente de datos fiable. Tanto Catastro como PNOA cumplen relativamente bien todos los requisitos.
+{% endhint %}
+
+Además de lo anterior, puede facilitarnos mucho trabao los siguientes plugins y presets de JOSM:
+* Plugins (para más información sobre qué son los plugins y como se instalan, ver receta "Cómo Añadir plugins a JOSM"): 
+    * [Building tools](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/BuildingsTools): un sencillo plugin para dibujar edificios rectangulares.
+    * [CAD Tools](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/CADTools): herramientas que emulan ciertas funcionalidades de programas de CAD para poder dibujar con mayor precisión.
+    * Measurement: para obtener información sobre los ángulos que utilizaremos en las cubiertas.
+    * [Relation Toolbox](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox)
+    * [Terracer](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox): ideal para crear viviendas pareadas (aunque no se ha utilizado en esta receta porque el contexto en el que se sitúa -Centro de Zaragoza- no tiene estas tipologías edificatorias).
+    {% hint style='hint' %}
+**Protip:** Puede utilizarse el plugin Terracer para crear matrices de elementos equidistantes, aunque no sean edificios. Un buen ejemplo de ello sería, por ejemplo, una hilera de árboles plantados en un parque o paseo.
+{% endhint %}
+* Presets (para más información sobre qué son los presets y como se instalan, ver receta "Cómo usar presets en JOSM"): 
+    * **3D buildings** para simplificar el proceso de añadir etiquetas con información en 3D.
+    * Roofs
 
 Además, es recomendable tener a mano las siguientes páginas de la wiki de openstreetmap:
 
