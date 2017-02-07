@@ -6,7 +6,9 @@ Por: Alejandro Suárez, Carlos Cámara
 
 ## Objetivos
 
-Dibujar edificios y etiquetarlos con detalle suficiente para que se visualicen en 3D en otros servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 demo](http://demo.f4map.com/) , tal y como muestra la imagen siguiente con información en 3D de Huesca.![](/03.Recetas/img/huesca-3d.jpg)
+Dibujar edificios y etiquetarlos con detalle suficiente para que se visualicen en 3D en otros servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 Maps](http://demo.f4map.com/), tal y como muestra la imagen siguiente con información en 3D de Huesca.
+
+![](/03.Recetas/img/huesca-3d.jpg)
 
 ## Ingredientes
 
@@ -33,8 +35,13 @@ Explicar el procedimiento paso a paso
 
 Lo primero que debemos hacer es dibujar la geometría de los edificios. En este primer paso empezaremos por lo más general (el perímetro) y posteriormente iremos añadiendo más detalles.
 
-1. Activaremos (si no lo hemos hecho ya) las capas de Catastro y PNOA, que nos servirán de guía en todo momento. Utilizaremos la capa del Catastro para calcar la geometría de los edificios y saber el número de pisos de los edificios[^catastro]. La imagen satélite del PNOA nos servirá, más adelante, para obtener información acerca de las alturas, tipo de cubiertas o materiales.
-1. 
+1. **Activar las capas de Catastro y PNOA**, que nos servirán de guía en todo momento. Utilizaremos la capa del Catastro para calcar la geometría de los edificios y saber el número de pisos de los edificios[^catastro]. La imagen satélite del PNOA nos servirá, más adelante, para obtener información acerca de las alturas, tipo de cubiertas o materiales.
+![](/03.Recetas/img/huesca-3d.jpg)
+
+1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible (podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se activan con la rueda central del ratón).
+1. Añadir las medianeras de los edificios.
+1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
+1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
 
 
 ## Crear la relación
