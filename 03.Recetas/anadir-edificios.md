@@ -31,8 +31,10 @@ Explicar el procedimiento paso a paso
 
 ### Dibujar
 
-Explicar qué se dibuja primero (¿el contorno?), qué criterio utilizar para trocear...
+Lo primero que debemos hacer es dibujar la geometría de los edificios. En este primer paso empezaremos por lo más general (el perímetro) y posteriormente iremos añadiendo más detalles.
 
+1. Activaremos (si no lo hemos hecho ya) las capas de Catastro y PNOA, que nos servirán de guía en todo momento. Utilizaremos la capa del Catastro para calcar la geometría de los edificios y saber el número de pisos de los edificios[^catastro]. La imagen satélite del PNOA nos servirá, más adelante, para obtener información acerca de las alturas, tipo de cubiertas o materiales.
+1. 
 
 
 ## Crear la relación
@@ -70,3 +72,4 @@ Explicar paso n
 
 Resumirlo brevemente.
 
+[^catastro]: Aunque el Catastro es un documento legal, no hay que confiar ciegamente en él, dado que puede contener información incorrecta o desactualizada. De ahí que sea recomendable contrastarla con otras fuentes o, si tenemos oportunidad, visitando el emplazamiento y conociéndolo de primera mano.
