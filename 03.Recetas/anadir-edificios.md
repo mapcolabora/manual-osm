@@ -24,7 +24,7 @@ Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente
   * ...
   
   {% hint style='danger' %}
-Para la elección de la referencia deberemos tener en cuenta especialmente tres cosas: 1) que su licencia de uso sea compatible con OSM; 2) las deformaciones derivadas de la proyección -especialmente importante en edificios altos o lugares con pendiente; y 3) que se trate de una fuente de datos fiable. Tanto Catastro como PNOA cumplen relativamente bien todos los requisitos.
+Para la elección de la referencia deberemos tener en cuenta especialmente tres cosas: 1) que su licencia de uso sea compatible con OSM; 2) las deformaciones derivadas de la proyección -especialmente importante en edificios altos o lugares con pendiente; y 3) que se trate de una fuente de datos fiable. Tanto Catastro como PNOA cumplen relativamente bien todos los requisitos, y además vienen incorporados por defecto en JOSM.
 {% endhint %}
 
 Además de lo anterior, puede facilitarnos mucho trabao los siguientes plugins y presets de JOSM:
@@ -48,34 +48,44 @@ Además, es recomendable tener a mano las siguientes páginas de la wiki de open
 
 ## Procedimiento
 
-Explicar el procedimiento paso a paso
+Hay muchas maneras de crear edificios en OSM, siendo lo más habitual crear edificios a partir de áreas cerradas o usando relaciones. En esta receta explicaremos cómo crear edificios a partir de relaciones, ya que aunque el procedimiento es algo menos intuitivo tiene la gran ventaja de que se evitan crear líneas superpuestas (por ejemplo medianeras), con el consiguiente ahorro de tiempo.
 
-### Dibujar
+### Crear el contorno de un edificio
 
 Lo primero que debemos hacer es dibujar la geometría de los edificios. En este primer paso empezaremos por lo más general (el perímetro) y posteriormente iremos añadiendo más detalles.
+
+{% hint style='danger' %}
+Consideramos que la unidad mínima a representar es un edificio. Debemos evitar caer en la tentación de querer ahorrar tiempo dibujando directamente una manzana para, más adelante, dividirla. Aunque tiene mucho sentido el procedimiento, al hacerlo JOSM nos advertirá de que hay edificios dentro de otros (dado que la relación inicial se mantendría).
+¿Cómo podemos identificar los límites de un edificio? En caso de no disponer el conocimiento local para distinguir los límites de un edificio podemos usar las líneas gruesas del Catastro que determinan las parcelas y compararlas con las fotografías por satélite.
+{% endhint %}
+
 
 1. **Activar las capas de Catastro y PNOA**, que nos servirán de guía en todo momento. Utilizaremos la capa del Catastro para calcar la geometría de los edificios y saber el número de pisos de los edificios[^catastro]. La imagen satélite del PNOA nos servirá, más adelante, para obtener información acerca de las alturas, tipo de cubiertas o materiales.
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-catastro.webm?raw=true"></source> 
 </video>
 
-1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible.
+1. **Calcar sobre el catastro el perímetro de los edificios** (en este caso dibujaremos la totalidad de la manzana). Para ello utilizaremos la herramienta `línea` y marcaremos los puntos sobre la capa del catastro con la mayor precisión posible. En esta fase ignoraremos todas aquellas terrazas, torres o segmentos interiores del edificio, con la única excepción de los patios interiores que estén completamente dentro del edificio (sin tocar la medianera, dado que si no, formarían parte del perímetro).
 {% hint style='tip' %}
 Podemos ayudarnos en todo momento de las herramientas `zoom` y `encuadre` que se activan con la rueda central del ratón para obtener una mejor precisión.
 {% endhint %}
-![](/03.Recetas/img/edificios-josm-perimetro.webm)
-1. Añadir las medianeras de los edificios.
+{% hint style='danger' %}
+Debemos evitar superponer líneas, incluso aunque nos parezca que el perímetro del edificio no está cerrado. Para evitar superponer líneas y tener edificios abiertos (algo que JOSM no nos dejará hacer) utilizaremos relaciones (ver a continuación).
+{% endhint %}
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro.webm"></source> 
 </video>
+1. **Partir el perímetro en segmentos** delimitados por aquellos nodos en los que converjan más de tres aristas para ello. Para ello deberemos seleccionar la línea a dividir y luego, pulsando la tecla `MAY` (Atajo de teclado: `P`)
 
-1. Partir el perímetro en segmentos, para ello (Atajo de teclado: `P`)
+
+### Crear la relación
+
 1. Seleccionar los distintos segmentos que conforman un edificio y crear una relación (Atajo de teclado: `CTRL+B`)
 <video width="100%" controls preload> 
     <source src="img/edificios-josm-perimetro-02.webm"></source> 
 </video>
 
-## Crear la relación
+
 
 Explicar qué elementos deben formar parte de la relación y cómo crearla. Copiado de email en tak-es:
 
