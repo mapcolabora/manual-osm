@@ -104,13 +104,22 @@ Explicar qué elementos deben formar parte de la relación y cómo crearla. Copi
 >
 >Para editar las etiquetas de una relación: selecionas una vía que sea parte de la relación y en el panel de la derecha donde aparecen las etiquetas, haces doble clic en la relación recién creada. En la ventana recién creada puedes editar las etiquetas de la relación y sus miembros. 
 
+### Etiquetar la relación
 
 Cada edificio debería tener su relación independiente, reflejando sus características generales:
 
 *  `type=multipoligon` Valor fijo para que se cree una relación 
 *  `building=<lo que sea>`Aquí especificamos el tipo de edificio \(puede ser una iglesia, un edificio residencial, una vivienda aislada o un edificio público, entre otros - para ver los valores posibles referimos a la wiki [Key:building](http://wiki.openstreetmap.org/wiki/Key:building))
-*  `building:levels=<el máximo>`Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
-*  `height=<la máxima` Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
+*  `building:levels=<el mínimo>`Aquí especificamos el número de pisos por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\).
+*  `height=<la máxima` Aquí especificamos la altura por encima del nivel del suelo del edificio en su conjunto. En caso de que tenga partes con alturas distintas lo especificaremos más adelante \(Ver paso siguiente\). 
+
+{% hint style='hint' %}
+Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso de que esta etiqueta no exista, utiliza la regla de multiplicar *3 el número de pisos (`building:levels`), algo que puede ser una aproximación razonable para muchos edificios de viviendas habituales, pero tremendamente erróneo en edificios singulares como iglesias, que a pesar de tener una sola planta, la nave central suele tener una altura muy superior a los 3 metros.
+{% endhint %}
+
+
+
+OSM utiliza este valor para calcular la altura del edificio, y en caso de que esta etiqueta no exista, utiliza la regla de multiplicar 
 * ...
 
 ## Añadir detalles a los edificios
