@@ -111,9 +111,7 @@ Con los pasos anteriores hemos creado una relación, pero falta decir que dicha 
 
 1. **Seleccionar una vía (línea)** que sea parte de la relación que acabamos de crear.
 1. **Seleccionar la relación** a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
-
 ![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
-
 {% hint style='danger' %}
 Hay que tener en cuenta que un elemento puede pertenecer a más de una relación a la vez (en realidad, las medianeras pertenecerán, como mínimo, a dos relaciones, una para cada edificio que separan). Por eso debemos de estar seguros de que seleccionamos la relación que queremos modificar y no otra. 
 En la imagen superior, el panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada.
