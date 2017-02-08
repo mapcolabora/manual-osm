@@ -111,13 +111,16 @@ Con los pasos anteriores hemos creado una relación, pero falta decir que dicha 
 
 1. **Seleccionar una vía (línea)** que sea parte de la relación que acabamos de crear.
 1. **Seleccionar la relación** a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
+
 ![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
+
 {% hint style='danger' %}
 Hay que tener en cuenta que un elemento puede pertenecer a más de una relación a la vez (en realidad, las medianeras pertenecerán, como mínimo, a dos relaciones, una para cada edificio que separan). Por eso debemos de estar seguros de que seleccionamos la relación que queremos modificar y no otra. 
 En la imagen superior, el panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada.
 Algunas relaciones tienen nombre, lo cual facilita mucho saber qué relación estamos modificando. Una buena práctica consiste en darles nombres a las relaciones, para ello podemos usar la etiqueta `name=<nombre oficial>` (en caso de que tenga un nombre oficial) y para aquellos casos  en los que queremos dar un nombre descriptivo a nivel interno, podemos usar `note=<breve descripción>`.
 {% endhint %}
-1. **Añadir las siguientes etiquetas** a la relación seleccionada:
+
+3. **Añadir las siguientes etiquetas** a la relación seleccionada:
     *  `type=multipoligon` (este es un valor fijo añadido automáticamente al crear una relación e indica, precisamente, que se trata de una relación -aka, un polígono virtual) 
     *  `building=<lo que sea>` El valor por defecto será `yes`, sin embargo, ese valor solamente indica que se trata de un edificio, sin indicar de qué tipo se trata. Si queremos ser más concretos podemos especificar el tipo de edificio, como por ejemplo una iglesia (`building=church`), un edificio residencial (`building=residential`), una vivienda aislada (`building=detached`) o un edificio público (`building=public`), entre otros)
     
