@@ -140,7 +140,7 @@ La **altura del edificio**:
 Para calcular la altura de los edificios, OSM utiliza la clave `height`. En caso de que esta etiqueta no exista, utiliza la regla de multiplicar `x3` el número de pisos (`building:levels`), algo que puede ser una aproximación razonable para muchos edificios de viviendas habituales, pero tremendamente erróneo en edificios singulares como iglesias, que a pesar de tener una sola planta, la nave central suele tener una altura muy superior a los 3 metros.
 {% endhint %}
 
-Otro aspecto interesante son las cubiertas del edificio[^cubiertas]. 
+Otro aspecto interesante son las cubiertas del edificio. 
 
 * `roof:shape`
 * `roof:direction`
