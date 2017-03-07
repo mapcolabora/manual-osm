@@ -164,10 +164,10 @@ Para edificios cuyas propiedades (altura, cubiertas, materiales...) no son const
 1. Dividir el perímetro de los edificios en aquellos nodos que conecten más de dos vías (mismo procedimiento que el que hemos explicado anteriormente)
 1. Seleccionar los elementos que conforman la parte del edificio (deberán delimitar un área cerrada) y crear una relación.
 1. Etiquetar la relación con las mismas etiquetas que hemos visto anteriormente:
-    * `Building:part=<yes>` Esta es la única etiqueta distinta a las anteriores. Con ella estamos definiendo que la relación no es un edificio (de lo contrario tendríamos un edificio dentro de otro) sino una parte del mismo, y como tal, puede tener las mismas propiedades (etiquetas) que si se tratase de un edificio normal.
-    * `Building=<lo que sea>`
-    * `Building:levels=<el de esa zona>`
-    * `Height=<la de esa zona>`
+    * `building:part=<yes>` Esta es la única etiqueta distinta a las anteriores. Con ella estamos definiendo que la relación no es un edificio (de lo contrario tendríamos un edificio dentro de otro) sino una parte del mismo, y como tal, puede tener las mismas propiedades (etiquetas) que si se tratase de un edificio normal.
+    * `building=<lo que sea>`
+    * `building:levels=<el de esa zona>`
+    * `height=<la de esa zona>`
     * Cualquiera de las etiquetas que podemos añadir a un edificio ...
 1. Repetir el proceso por cada una de las partes que conformen el edificio.
 
