@@ -63,6 +63,8 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 ![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas](/04.Recetas/img/IMG_20160609_081418.jpg)
 
+Los pasos de peatones son elementos clave que condicionan la movilidad de las personas con diversidad funcional debido a la gran variables que contienen y a su ejecución dispar. 
+
 {% hint style='danger' %}
 La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
 {% endhint %}
@@ -83,6 +85,7 @@ Por esos motivos las etiquetas e información que pondremos en un caso u otro de
   * **Cruces de peatones** `highway=crossing`
     * Si únicamente está pintado en el suelo, sin que haya semáforos: `crossing=uncontrolled` y `crossing_ref=zebra`. Como no tendrá semáforos con señales acústicas podremos añadir directamente `traffic_signals:sound=no`
   * Si está regulado por **semáforos**, añadiremos `crossing=traffic_signals`, pero especificaremos cómo son los semáforos en los nodos
+  * Rugosidad del pavimento: que permita la circulación sin dificultad en patines o carritos de la compra con ruedas pequeñas (excelente); bicis de carreras (buena) o bicis de ciudad o silla de ruedas (intermedio), `smoothness=excellent/good/intermediate/bad...` (para más información sobre los criterios de clasificación de la rugosidad remitimos a [este artículo de la wiki](http://wiki.openstreetmap.org/wiki/Key:smoothness))
   * Tipo de cruce de peatones: OSM establece una categorización de los cruces de peatones según tengan o no semáforos o permitan el paso de bicicletas. Podemos aprovechar la ocasión para añadir esta información.
     * Si **tiene semáforos** y **permite el paso de bicicletas** `crossing_ref=toucan`
     * Si **tiene semáforos** y **no permite el paso de bicicletas** `crossing_ref=pelican`
@@ -99,6 +102,21 @@ Por esos motivos las etiquetas e información que pondremos en un caso u otro de
 En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
 
 ### Aceras
+En las aceras anotaremos su anchura, el tipo de pavimento y si se puede acceder en silla de ruedas o no. De nuevo, nos encontramos ante un caso en el que el etiquetado variará en función de cómo estén representadas gráficamente las aceras, pudiendo estar representadas como vías independientes o como etiquetas de una vía[^sideways].
+
+#### Aceras como vías independientes: 
+En este caso tenemos una vía que representa la calzada de la calle y otra(s) distinta(s) que representa(n) la acera. Este sistema simplifica mucho el etiquetado pero exige que exista la geometría. Usaremos el siguiente etiquetado:
+* Especificaremos que se trata de una acera: `highway=footway`
+* Anchura (en metros) `width=<anchura en metros y usando el . como separador decimal>`. Esto es relevante porque en anchuras inferiores a 80cm no puede pasar una silla de ruedas. Con anchuras inferiores a 1m puede pasar pero con dificultad.
+  {% hint style='danger' %}
+Hay que tener en cuenta que la anchura de la acera puede variar o incluso tener pequeñas estrecheces. En tal caso deberá dividirse la vía en segmentos más pequeños seleccionando primeramente la vía y posteriormente los puntos que usaremos para cortar (si no existen los dibujaremos) y pulsando la tecla `P` o haciendo clic en el menú `Herramientas\Dividir una vía`)
+{% endhint %}
+* Tipo de pavimento: Adoquines planos y regulares (`surface=sett`), adoquines redondeados  (`surface=cobblestone`), baldosas (`surface=paving_stones`), asfalto (`surface=asphalt`) u otros (ver [descripción de la clave en la wiki de OSM](http://wiki.openstreetmap.org/wiki/Surface) para más valores).
+* Rugosidad del pavimento (ver punto anterior): `smoothness=excellent/good/intermediate/bad...`
+* Todo lo anterior determinará si el tramo de acera que estamos etiquetando es accesible en silla de ruedas, no lo es en absoluto o se necesita ayuda (por ejemplo debido a una pendiente excesiva): `wheelchair=yes/no/limited`
+
+
+
 
 ### Escaleras
 
@@ -106,7 +124,7 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 
 * Escaleras: `highway=steps`
 * Número de escalones: `step_count=<número de escalones>`
-* Anchura de las escaleras: `width=<anchura en metros>![](/assets/IMG_20160609_081418.jpg)`
+* Anchura de las escaleras: `width=<anchura en metros>`
 
 
 El sentido de subida de la escalera viene determinado por la dirección de la flecha 
@@ -118,3 +136,4 @@ El sentido de subida de la escalera viene determinado por la dirección de la fl
 Resumirlo brevemente.
 
 [^colectivo-ioe]: Colectivo Ioé (2013): “Diversidad funcional en España. Hacia la inclusión en igualdad de las personas con discapacidades”, _Revista Española de Discapacidad_, 1 (1): 33-46. doi:[http://dx.doi.org/10.5569/2340-5104.01.01.02](http://dx.doi.org/10.5569/2340-5104.01.01.02)
+[^sideways]: Para más información al respecto remitimos a este artículo de la wiki de OSM: [http://wiki.openstreetmap.org/wiki/Sidewalks](http://wiki.openstreetmap.org/wiki/Sidewalks)
