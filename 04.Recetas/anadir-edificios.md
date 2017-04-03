@@ -6,7 +6,7 @@ Por: Carlos Cámara, Alejandro Suárez
 
 Una parte importante (aunque a menudo descuidada en OSM) de las ciudades son los edificios. En esta receta veremos cómo dibujar la geometría de los edificios y también cómo etiquetarlos con información relativa a las propiedades del edificio. Gracias a este trabajo podremos visualizar, por ejemplo, los edificios en 3D en servicios como [OSMbuildings](http://osmbuildings.org/) o  [F4 Maps](http://demo.f4map.com/), tal y como muestra la imagen siguiente con información en 3D de Huesca.
 
-![Captura de pantalla de Huesca en 3D desde el visor F4 Maps](/03.Recetas/img/huesca-3d.jpg)
+![Captura de pantalla de Huesca en 3D desde el visor F4 Maps](/04.Recetas/img/huesca-3d.jpg)
 
 {% hint style='danger' %}
 A diferencia de programas como [Blender](http://blender.org), [Sketchup](http://sketchup.com), [Freecad](http://freecad.org)... OSM solo puede trabajar en 2D, ya que la única geometría que podemos utilizar son puntos, líneas y áreas. El efecto de 3D (o incluso el de 2.5D) se consigue gracias al uso extensivo de determinadas etiquetas, lo cual es un procedimiento completamente distinto al de modelado 3D, algo que puede acarrear cierta confusión para quienes están acostumbrados a usar este tipo de herramientas.
@@ -111,7 +111,7 @@ Con los pasos anteriores hemos creado una relación, pero falta decir que dicha 
 
 1. **Seleccionar una vía (línea)** que sea parte de la relación que acabamos de crear.
 1. **Seleccionar la relación** a la que pertenece la vía seleccionada en el caso anterior. Para ello hay que hacer doble clic en la relación recién creada que se muestra en el panel lateral derecho `Etiquetas|Membresías`.  
-![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/03.Recetas/img/edificios-josm-seleccionar-relación.png)
+![El panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada](/04.Recetas/img/edificios-josm-seleccionar-relación.png)
 {% hint style='danger' %}
 Hay que tener en cuenta que un elemento puede pertenecer a más de una relación a la vez (en realidad, las medianeras pertenecerán, como mínimo, a dos relaciones, una para cada edificio que separan). Por eso debemos de estar seguros de que seleccionamos la relación que queremos modificar y no otra. 
 En la imagen superior, el panel "Tags" muestra que el segmento seleccionado pertenece a tres relaciones, la primera de las cuales está seleccionada.
