@@ -61,7 +61,7 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 ### Pasos de peatones
 
-![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas](/04.Recetas/img/IMG_20160609_081418.jpg)
+![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas (Fuente: CCM)](/04.Recetas/img/IMG_20160609_081418.jpg)
 
 Los pasos de peatones son elementos clave que condicionan la movilidad de las personas con diversidad funcional debido a la gran variables que contienen y a su ejecución dispar. 
 
@@ -104,14 +104,14 @@ En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo rep
 ### Aceras
 En las aceras anotaremos su anchura, el tipo de pavimento y si se puede acceder en silla de ruedas o no. De nuevo, nos encontramos ante un caso en el que el etiquetado variará en función de cómo estén representadas gráficamente las aceras, pudiendo estar representadas como vías independientes o como etiquetas de una vía[^sideways].
 
-![Acera estrecha, con pendiente y rampas para coches que dificultan enormemente la circulación en silla de ruedas](/04.Recetas/img/IMG_20161203_121327.jpg)
+![Acera estrecha, con pendiente y rampas para coches que dificultan enormemente la circulación en silla de ruedas (Fuente: CCM)](/04.Recetas/img/IMG_20161203_121327.jpg)
 
 #### Aceras como vías independientes: 
 En este caso tenemos una vía que representa la calzada de la calle y otra(s) distinta(s) que representa(n) la acera. Este sistema simplifica mucho el etiquetado pero exige que exista la geometría. Usaremos el siguiente etiquetado:
 * Especificaremos que se trata de una acera: `highway=footway`
 * Anchura (en metros) `width=<anchura en metros y usando el . como separador decimal>`. Esto es relevante porque en anchuras inferiores a 80cm no puede pasar una silla de ruedas. Con anchuras inferiores a 1m puede pasar pero con dificultad.
   {% hint style='danger' %}
-Hay que tener en cuenta que la anchura de la acera puede variar o incluso tener pequeñas estrecheces. En tal caso deberá dividirse la vía en segmentos más pequeños seleccionando primeramente la vía y posteriormente los puntos que usaremos para cortar (si no existen los dibujaremos) y pulsando la tecla `P` o haciendo clic en el menú `Herramientas\Dividir una vía`) ![Acera con un estrechamiento considerable que dificulta el paso con silla de ruedas por toda la acera](/04.Recetas/img/2016-05-07_11-25-54.jpg)
+Hay que tener en cuenta que la anchura de la acera puede variar o incluso tener pequeñas estrecheces. En tal caso deberá dividirse la vía en segmentos más pequeños seleccionando primeramente la vía y posteriormente los puntos que usaremos para cortar (si no existen los dibujaremos) y pulsando la tecla `P` o haciendo clic en el menú `Herramientas\Dividir una vía`) ![Acera con un estrechamiento considerable que dificulta el paso con silla de ruedas por toda la acera (Fuente: CCM)](/04.Recetas/img/2016-05-07_11-25-54.jpg)
 {% endhint %}
 * Tipo de pavimento: Adoquines planos y regulares (`surface=sett`), adoquines redondeados  (`surface=cobblestone`), baldosas (`surface=paving_stones`), asfalto (`surface=asphalt`) u otros (ver [descripción de la clave en la wiki de OSM](http://wiki.openstreetmap.org/wiki/Surface) para más valores).
 * Rugosidad del pavimento (ver punto anterior): `smoothness=excellent/good/intermediate/bad...`
