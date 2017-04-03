@@ -5,9 +5,7 @@ Cualquier tipo de edición en OSM está asociada a un usuario, o lo que es lo mi
 A continuación explicamos los dos modos posibles, y asumimos que nuestro ordenador tiene conexión a Internet.
 
 ## Vinculación utilizando OAuth
-Utilizar el protocolo OAUTH es más recomendable porque en ningún momento se guarda información con nuestras credenciales de usuario en el equipo. De este modo, aunque alguien pudiera acceder al mismo, jamás podría apropiarse de nuestra cuenta de OSM.
-
-Para utilizar OAUTH deberemos realizar los pasos siguientes:
+Utilizar el protocolo OAuth es más recomendable porque en ningún momento se guarda información con nuestras credenciales de usuario en el equipo y la información que se manda a través de Internet está cifrada. Para utilizar este método deberemos realizar los pasos siguientes:
 
 1. Abir JOSM
 2. Abrir la ventana de preferencias, ya sea:
