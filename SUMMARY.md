@@ -13,6 +13,7 @@
   * [Editar los datos](02.Workflow-osm/editar-los-datos.md)
   * [Ver tu trabajo en el mapa](02.Workflow-osm/ver-mapas.md)
 * [Parte 3: JOSM](03.JOSM/readme.md)
+  * [Instalación de JOSM](03.JOSM/instalacion-de-josm.md)
   * [Vincular cuenta de OSM](03.JOSM/vincular-cuenta-osm.md)
 * [Parte 4: Recetas](04.Recetas/README.md)
   * [Receta ejemplo \(Plantilla\)](04.Recetas/receta-ejemplo.md)
