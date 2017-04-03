@@ -117,8 +117,15 @@ Hay que tener en cuenta que la anchura de la acera puede variar o incluso tener 
 * Rugosidad del pavimento (ver punto anterior): `smoothness=excellent/good/intermediate/bad...`
 * Todo lo anterior determinará si el tramo de acera que estamos etiquetando es accesible en silla de ruedas, no lo es en absoluto o se necesita ayuda (por ejemplo debido a una pendiente excesiva): `wheelchair=yes/no/limited`
 
+#### Aceras como etiquetas a una vía existente:
+En este caso no existe una geometría específica, y si anotamos etiquetas como la anchura o el pavimento, OSM entiende que en realidad se está describiendo la calzada en lugar de la acera. Por ello deberán hacerse estas dos consideraciones:
 
-
+1. Añadir la etiqueta `sidewalk=both/left/right/none` en función de si hay acera en ambos lados, a la izquierda o derecha (con respecto al sentido de la vía) o en ningún lado.
+1. Utilizar las mismas etiquetas que en el caso de aceras como vías independientes pero añadiendo el prefijo `sidewalk:both:<nombre etiqueta>=*`. En caso de que las propiedades sean distintas a un lado u otro se añadirá, respectivamente: `sidewalk:right:<nombre etiqueta>=*` o `sidewalk:left:<nombre etiqueta>=*`. Ejemplo de ello serían:
+  * `sidewalk:both:width=*`
+  * `sidewalk:both:smoothness=*`
+  * `sidewalk:both:surface=*`
+  *  `sidewalk:both:wheelchair=*`
 
 ### Escaleras
 
@@ -127,9 +134,7 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 * Escaleras: `highway=steps`
 * Número de escalones: `step_count=<número de escalones>`
 * Anchura de las escaleras: `width=<anchura en metros>`
-
-
-El sentido de subida de la escalera viene determinado por la dirección de la flecha 
+* Sentido de subida de la escalera: viene determinado por la dirección de la flecha. Por defecto la punta de la flecha es el extremo alto, aunque es recomendable utilizar las etiquetas `incline=up/down` para ello (siempre en relación al sentido de la flecha).
 
 
 
