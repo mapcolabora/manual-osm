@@ -61,6 +61,8 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 ### Pasos de peatones
 
+![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas](/04.Recetas/img/IMG_20160609_081418.jpg)
+
 {% hint style='danger' %}
 La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
 {% endhint %}
@@ -96,7 +98,18 @@ Por esos motivos las etiquetas e información que pondremos en un caso u otro de
 #### Cruces de peatones como nodos:
 En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
 
+### Aceras
 
+### Escaleras
+
+En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía existente) como se detalla a continuación:
+
+* Escaleras: `highway=steps`
+* Número de escalones: `step_count=<número de escalones>`
+* Anchura de las escaleras: `width=<anchura en metros>![](/assets/IMG_20160609_081418.jpg)`
+
+
+El sentido de subida de la escalera viene determinado por la dirección de la flecha 
 
 
 
