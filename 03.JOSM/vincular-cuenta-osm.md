@@ -1,6 +1,6 @@
 # Vincular nuestra cuenta de OSM con el editor JOSM
 
-Cualquier tipo de edición en OSM está asociada a un usuario, o lo que es lo mismo: a diferencia de lo que ocurre en Wikipedia, en OSM no se permiten hacer modificaciones anónimas. Por tanto, si queremos utilizar JOSM deberemos enlazar el editor con nuestra cuenta de usuario, de modo que todos los cambios que hagamos queden vinculados a nuestro usuario. Existen dos maneras de hacer, mediante [OAuth](http://es.wikipedia.org/oauth) (más segura) o mediante identificación básica.
+Cualquier tipo de edición en OSM está asociada a un usuario, o lo que es lo mismo: a diferencia de lo que ocurre en Wikipedia, en OSM no se permiten hacer modificaciones anónimas. Por tanto, si queremos utilizar JOSM deberemos enlazar el editor con nuestra cuenta de usuario, de modo que todos los cambios que hagamos queden vinculados a nuestro usuario. Existen dos maneras de hacer, mediante [OAuth](https://es.wikipedia.org/wiki/OAuth) (más segura) o mediante identificación básica.
 
 A continuación explicamos los dos modos posibles, y asumimos que nuestro ordenador tiene conexión a Internet.
 
