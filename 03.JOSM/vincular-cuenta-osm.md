@@ -30,7 +30,7 @@ Para utilizar este sistema deberemos realizar los pasos siguientes:
 3. Haciendo clic en el icono preferencias
 4. Pulsando F12
 5. Menú `Edición\Preferencias`
-6. En la ventana preferencias haremos clic en la segunda pestaña, llamada "Configuración de conexión al Servidor OSM" (ver captura de pantalla a continuación) ![Pantalla de preferencias con la pestaña "Configuración de conexión al Servidor OSM" seleccionada](img/josm-osm-connection.png)
+6. En la ventana preferencias haremos clic en la segunda pestaña, llamada "Configuración de conexión al Servidor OSM" 
 7. Haremos clic en el botón de selección `Usar autentificación básica` (ver captura de pantalla):
  ![Crear nueva llave de acceso](img/josm-osm-connection-basic.png) 
 8. Introduciremos nuestras credenciales de acceso a OSM (nombre de usuario y contraseña) en las casillas correspondientes
