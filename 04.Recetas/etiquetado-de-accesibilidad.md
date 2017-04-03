@@ -15,27 +15,6 @@ Debido a que el colectivo de las personas con diversidad funcional es a su vez m
 La wiki de OSM tiene una [página específica dedicada a la discapacidad](http://wiki.openstreetmap.org/wiki/Disabilities) en la que todo tipo de etiquetados y proyectos relativos a este tema.
 {% endhint %}
 
-Se han identificado los siguientes aspectos relevantes con relación a la movilidad y la discapacidad y en esta receta aprenderemos a etiquetarlas y colocarlas en pasos de peatones y calles a partir de la geometría existente (aunque en algunos casos deberemos añadir nuevos puntos, recortar vías existentes o añadir nuevas):
-
-* Discapacidad visual:
-  * Pavimento táctil: `tactile_paving=yes/no/incorrect`
-  * Mapas en relieve:  `information=tactile_map`
-  * Escritura táctil: `information=braille`
-  * Sonidos (descripciones sonoras): `acoustic=voice_description`
-  * Semáforos con sonido: `traffic_signals:sound= yes/no`
-* Discapacidad motriz:
-  * Accesible en silla de ruedas: `wheelchair=yes/no/limited`
-  * Rugosidad del pavimento: `smoothness=exellent/good/...`
-  * Tipo de bordillo: `kerb=lowered/raised/flush`
-  * Rampa para silla de ruedas: `ramp:wheelchair=yes/no`
-    * Pasamanos: `handrail=yes/no`
-    * Situación del pasamanos: `handrail=right/center/left`
-  * Escaleras: `highway=steps`
-    * Número de escalones: `step_count= número de escalones`
-    * Anchura de las escaleras: `width= anchura`
-  * Parking para discapacitados: `amenity= parking` / `capacity:disabled=yes/no`
-  * Parques adaptados: `leisure=playground`/ `wheelchair= yes/no`
-
 {% hint %}
 A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/limited` o `width=<anchura en metros>`. Se trata de las mismas convenciones utilizadas en la wiki de OSM para representar las distintas [claves con sus respectivos valores](http://wiki.openstreetmap.org/wiki/Tags) y que se traducen en lo siguiente: 
 * El item que está a la izquierda del símbolo `=` es la clave, mientras que el item que está a la izquierda es su valor
@@ -142,7 +121,28 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 
 ## Resumen
 
-En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas que se aplican a distintas geometrías. También hemos aprendido a cómo modificar ligeramente las geometrías añadiendo nuevos puntos o partiendo elementos existentes.
+En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas que se aplican a distintas geometrías, a saber:
+
+* Discapacidad visual:
+  * Pavimento táctil: `tactile_paving=yes/no/incorrect`
+  * Mapas en relieve:  `information=tactile_map`
+  * Escritura táctil: `information=braille`
+  * Sonidos (descripciones sonoras): `acoustic=voice_description`
+  * Semáforos con sonido: `traffic_signals:sound= yes/no`
+* Discapacidad motriz:
+  * Accesible en silla de ruedas: `wheelchair=yes/no/limited`
+  * Rugosidad del pavimento: `smoothness=exellent/good/...`
+  * Tipo de bordillo: `kerb=lowered/raised/flush`
+  * Rampa para silla de ruedas: `ramp:wheelchair=yes/no`
+    * Pasamanos: `handrail=yes/no`
+    * Situación del pasamanos: `handrail=right/center/left`
+  * Escaleras: `highway=steps`
+    * Número de escalones: `step_count= número de escalones`
+    * Anchura de las escaleras: `width= anchura`
+  * Parking para discapacitados: `amenity= parking` / `capacity:disabled=yes/no`
+  * Parques adaptados: `leisure=playground`/ `wheelchair= yes/no`
+
+También hemos aprendido a cómo modificar ligeramente las geometrías añadiendo nuevos puntos o partiendo elementos existentes.
 
 [^colectivo-ioe]: Colectivo Ioé (2013): “Diversidad funcional en España. Hacia la inclusión en igualdad de las personas con discapacidades”, _Revista Española de Discapacidad_, 1 (1): 33-46. doi:[http://dx.doi.org/10.5569/2340-5104.01.01.02](http://dx.doi.org/10.5569/2340-5104.01.01.02)
 [^sideways]: Para más información al respecto remitimos a este artículo de la wiki de OSM: [http://wiki.openstreetmap.org/wiki/Sidewalks](http://wiki.openstreetmap.org/wiki/Sidewalks)
