@@ -61,38 +61,43 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 ### Pasos de peatones
 
-{% hint %}
+{% hint style='danger' %}
 La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
 {% endhint %}
 
 #### Cruces de peatones como vías:
-Se trata del caso más complejo, dado que 
-Etiquetado **en la vía**:
+Se trata del caso más complejo, dado que la vía representa el cruce en sí (el zebreado que interseca las distintas vías que cruza) mientras que los nodos de los extremos representan los bordillos, rampas, pavimentos y semáforos (si los hubiere). También pueden existir nodos intermedios que representen isletas o cruces que intersecan con carriles bici (a menudo no tienen semáforos ni pavimentos específicos). 
 
-Etiquetado **en sus extremos (nodos)**:
+{% hint style='danger' %}
+Hay que tener en cuenta las siguientes consideraciones: 
 
+1. A menudo se da el caso que ambos extremos del cruce tienen las mismas característcas físicas (en ese caso se usarán las mismas etiquetas en ambos extremos), pero no siempre es así. A veces puede ocurrir que en un extremo haya una rampa 
+2. A veces hay casos en los que deberemos etiquetar más puntos que los de los extremos, como en el caso de cruces en isletas o cruces que intersecan con carriles bici (a menudo no tienen semáforos ni pavimentos específicos). Deberemos prestar mucha atención a estos puntos intermedios debido a que únicamente podremos etiquetar algunas partes.
+{% endhint %}
 
-#### Cruces de peatones como nodos:
-En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos añadir todas las etiquetas anteriores en el mismo punto.
+Por esos motivos las etiquetas e información que pondremos en un caso u otro dependerán de la geometría, tal y como se especifica a continuación:
 
-Seleccionar el nodo y añadir (o complementar) las siguientes etiquetas:
-
-* **Cruces de peatones** `highway=crossing`
-  * Si únicamente está pintado en el suelo, sin que haya semáforos: `crossing=uncontrolled` y `crossing_ref=zebra`. Como no tendrá semáforos con señales acústicas podremos añadir directamente `traffic_signals:sound=no`
-  * Si está regulado por **semáforos**, añadiremos `crossing=traffic_signals`. Además, podremos complementarlo con la siguiente información relevante sobre los semáforos:
-    * **Señal acústica** en los semáforos si/no `traffic_signals:sound=yes/no`
-* **Pavimento táctil** si/no/incorrecto `tactile_paving=yes/no/incorrect`
- * **Tipo de bordillo** a ras/rebajado/elevado `kerb_flush/lowered/raised`
- * **Accesible en silla de ruedas** si/no `wheelchair_yes/no`
- * **Accesible en bicicleta** si/no `bicycle_yes/no`
- * **Tipo de fuente de información** según hayamos sacado la información en trabajo de campo o mediante otras fuentes de información `source_survey` (ejemplo para cuando la hemos obtenido, por ejemplo, en trabajo de campo)
- * **Observaciones** para poner cualquier tipo de información adicional que se crea de interés se utilizará la etiqueta "note". En este caso como es dentro del proyecto de Zaccesibilidad se puede optar por poner  `note=#zaccesibilidad`
- * **Tipo de cruce de peatones**
-    * *Open Street Map* establece una categorización de los cruces de peatones según tengan o no semáforos o permitan el paso de bicicletas.
+1. Etiquetado **en la vía**:
+  * **Cruces de peatones** `highway=crossing`
+    * Si únicamente está pintado en el suelo, sin que haya semáforos: `crossing=uncontrolled` y `crossing_ref=zebra`. Como no tendrá semáforos con señales acústicas podremos añadir directamente `traffic_signals:sound=no`
+  * Si está regulado por **semáforos**, añadiremos `crossing=traffic_signals`, pero especificaremos cómo son los semáforos en los nodos
+  * Tipo de cruce de peatones: OSM establece una categorización de los cruces de peatones según tengan o no semáforos o permitan el paso de bicicletas. Podemos aprovechar la ocasión para añadir esta información.
     * Si **tiene semáforos** y **permite el paso de bicicletas** `crossing_ref=toucan`
     * Si **tiene semáforos** y **no permite el paso de bicicletas** `crossing_ref=pelican`
     * Si **no tiene semáforos** y **permite el paso de bicicletas** `crossing_ref=tiger`
     * Si **no tiene semáforos** y **no permite el paso de bicicletas** `crossing_ref=zebra`
+2. Etiquetado **en los nodos** (extremos o intermedios):
+  * Existencia de semáforo `traffic_signals: yes/no` (en caso de que no exista, añadiremos automáticamente `traffic_signals:sound=no`).
+    * **Semáforos con señal acústica** en los semáforos si/no `traffic_signals:sound=yes/no`
+  * **Pavimento táctil** si/no/decorativo `tactile_paving=yes/no/primitive`
+  * **Tipo de bordillo** ya sea: enrasado (0cm),rebajado (3cm o menos) o elevado (más de 3 cm): `kerb_flush/lowered/raised` . Esto es importante porque determina en gran medida la siguiente etiqueta, si es accesible en silla de ruedas
+  * **Accesible en silla de ruedas** si, no, o si se puede cruzar con ayuda o con una silla de ruedas motorizada `wheelchair=yes/no/limited`
+
+#### Cruces de peatones como nodos:
+En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
+
+
+
 
 
 ## Resumen
