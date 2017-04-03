@@ -19,7 +19,11 @@ Para utilizar OAUTH deberemos realizar los pasos siguientes:
 8. Introduciremos nuestro nombre de usuario y contraseña en las casillas correspondientes
 9. Pulsar en el botón "Aceptar llave de acceso"
 10. Si todo ha ido bien (importante, debemos de tener conexión a Internet)
- 
+
+{% hint style='tip' %}
+En [este enlace de la web oficial de JOSM](https://josm.openstreetmap.de/wiki/Help/Dialog/OAuthAuthorisationWizard) pueden encontrarse instrucciones más detalladas y actualizadas. 
+{% endhint %}
+
 ## Vinculación Básica
 Podemos vincular nuestra cuenta sin utilizar OAuth, símplemente introduciendo nuestras credenciales de usuario. Aunque este método es más rápido, tiene cierto grado de vulnerabilidad, dado que almacena nuestro nombre de usuario y contraseña en nuestro equipo, y cualquiera que accediese a él de manera no autorizada podría hacerse con nuestros datos de acceso.
 
