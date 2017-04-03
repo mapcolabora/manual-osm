@@ -131,16 +131,18 @@ En este caso no existe una geometría específica, y si anotamos etiquetas como 
 
 En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía existente) como se detalla a continuación:
 
-* Escaleras: `highway=steps`
-* Número de escalones: `step_count=<número de escalones>`
-* Anchura de las escaleras: `width=<anchura en metros>`
-* Sentido de subida de la escalera: viene determinado por la dirección de la flecha. Por defecto la punta de la flecha es el extremo alto, aunque es recomendable utilizar las etiquetas `incline=up/down` para ello (siempre en relación al sentido de la flecha).
-
-
+1. En la via:
+  * Escaleras: `highway=steps`
+  * Número de escalones: `step_count=<número de escalones>`
+  * Anchura de las escaleras: `width=<anchura en metros>`
+  * Sentido de subida de la escalera: viene determinado por la dirección de la flecha. Por defecto la punta de la flecha es el extremo alto, aunque es recomendable utilizar las etiquetas `incline=up/down` para ello (siempre en relación al sentido de la flecha).
+  * Pasamanos `handrail=both/left/right`
+2. En los nodos de sus extremos:
+  * Pavimento táctil: `tactile_paving=yes/no`
 
 ## Resumen
 
-Resumirlo brevemente.
+En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas que se aplican a distintas geometrías. También hemos aprendido a cómo modificar ligeramente las geometrías añadiendo nuevos puntos o partiendo elementos existentes.
 
 [^colectivo-ioe]: Colectivo Ioé (2013): “Diversidad funcional en España. Hacia la inclusión en igualdad de las personas con discapacidades”, _Revista Española de Discapacidad_, 1 (1): 33-46. doi:[http://dx.doi.org/10.5569/2340-5104.01.01.02](http://dx.doi.org/10.5569/2340-5104.01.01.02)
 [^sideways]: Para más información al respecto remitimos a este artículo de la wiki de OSM: [http://wiki.openstreetmap.org/wiki/Sidewalks](http://wiki.openstreetmap.org/wiki/Sidewalks)
