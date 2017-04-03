@@ -15,16 +15,6 @@ Debido a que el colectivo de las personas con diversidad funcional es a su vez m
 La wiki de OSM tiene una [página específica dedicada a la discapacidad](http://wiki.openstreetmap.org/wiki/Disabilities) en la que todo tipo de etiquetados y proyectos relativos a este tema.
 {% endhint %}
 
-## Ingredientes
-
-Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
-
-1. Disponer de los datos recogidos a partir de observaciones de campo (ver capítulo "[Recoger datos](/02.Workflow-osm/recoger-datos.md)" de este mismo libro)
-2. Utilizar un editor, ya sea id o JOSM
-3. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
-
-## Procedimiento
-
 Se han identificado los siguientes aspectos relevantes con relación a la movilidad y la discapacidad y en esta receta aprenderemos a etiquetarlas y colocarlas en pasos de peatones y calles a partir de la geometría existente (aunque en algunos casos deberemos añadir nuevos puntos, recortar vías existentes o añadir nuevas):
 
 * Discapacidad visual:
@@ -35,6 +25,7 @@ Se han identificado los siguientes aspectos relevantes con relación a la movili
   * Semáforos con sonido: `traffic_signals:sound= yes/no`
 * Discapacidad motriz:
   * Accesible en silla de ruedas: `wheelchair=yes/no/limited`
+  * Rugosidad del pavimento: `smoothness=exellent/good/...`
   * Tipo de bordillo: `kerb=lowered/raised/flush`
   * Rampa para silla de ruedas: `ramp:wheelchair=yes/no`
     * Pasamanos: `handrail=yes/no`
@@ -45,10 +36,64 @@ Se han identificado los siguientes aspectos relevantes con relación a la movili
   * Parking para discapacitados: `amenity= parking` / `capacity:disabled=yes/no`
   * Parques adaptados: `leisure=playground`/ `wheelchair= yes/no`
 
+{% hint %}
+A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/limited` o `width=<anchura en metros>`. Se trata de las mismas convenciones utilizadas en la wiki de OSM para representar las distintas [claves con sus respectivos valores](http://wiki.openstreetmap.org/wiki/Tags) y que se traducen en lo siguiente: 
+* El item que está a la izquierda del símbolo `=` es la clave, mientras que el item que está a la izquierda es su valor
+* En caso de que haya varias opciones posibles para un valor se escribirán de este modo `*=yes/no/limited`, siendo respectivamente `yes`, `no` y `limited` las opciones posibles, pero dado que son excluyentes, solo se podrá utilizar una de ellas.
+* El símbolo `*` es un comodín y significa que puede tener cualquier valor. 
+* El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos
+{% endhint %}
+
+## Ingredientes
+
+Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
+
+1. Disponer de los datos recogidos a partir de observaciones de campo (ver capítulo "[Recoger datos](/02.Workflow-osm/recoger-datos.md)" de este mismo libro)
+2. Utilizar un editor, ya sea id o JOSM
+3. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
+
+## Procedimiento
+
+El procedimiento a seguir es el mismo en todos los casos:
+
+1. Seleccionar la geometría existente que representa el elemento a etiquetar (cruces, calles, escaleras...) o, si no existe, dibujarlaa partir de nuestras notas de campo mediante puntos o vías.
+1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
 
 ### Pasos de peatones
 
-a
+{% hint %}
+La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
+{% endhint %}
+
+#### Cruces de peatones como vías:
+Se trata del caso más complejo, dado que 
+Etiquetado **en la vía**:
+
+Etiquetado **en sus extremos (nodos)**:
+
+
+#### Cruces de peatones como nodos:
+En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos añadir todas las etiquetas anteriores en el mismo punto.
+
+Seleccionar el nodo y añadir (o complementar) las siguientes etiquetas:
+
+* **Cruces de peatones** `highway=crossing`
+  * Si únicamente está pintado en el suelo, sin que haya semáforos: `crossing=uncontrolled` y `crossing_ref=zebra`. Como no tendrá semáforos con señales acústicas podremos añadir directamente `traffic_signals:sound=no`
+  * Si está regulado por **semáforos**, añadiremos `crossing=traffic_signals`. Además, podremos complementarlo con la siguiente información relevante sobre los semáforos:
+    * **Señal acústica** en los semáforos si/no `traffic_signals:sound=yes/no`
+* **Pavimento táctil** si/no/incorrecto `tactile_paving=yes/no/incorrect`
+ * **Tipo de bordillo** a ras/rebajado/elevado `kerb_flush/lowered/raised`
+ * **Accesible en silla de ruedas** si/no `wheelchair_yes/no`
+ * **Accesible en bicicleta** si/no `bicycle_yes/no`
+ * **Tipo de fuente de información** según hayamos sacado la información en trabajo de campo o mediante otras fuentes de información `source_survey` (ejemplo para cuando la hemos obtenido, por ejemplo, en trabajo de campo)
+ * **Observaciones** para poner cualquier tipo de información adicional que se crea de interés se utilizará la etiqueta "note". En este caso como es dentro del proyecto de Zaccesibilidad se puede optar por poner  `note=#zaccesibilidad`
+ * **Tipo de cruce de peatones**
+    * *Open Street Map* establece una categorización de los cruces de peatones según tengan o no semáforos o permitan el paso de bicicletas.
+    * Si **tiene semáforos** y **permite el paso de bicicletas** `crossing_ref=toucan`
+    * Si **tiene semáforos** y **no permite el paso de bicicletas** `crossing_ref=pelican`
+    * Si **no tiene semáforos** y **permite el paso de bicicletas** `crossing_ref=tiger`
+    * Si **no tiene semáforos** y **no permite el paso de bicicletas** `crossing_ref=zebra`
+
 
 ## Resumen
 
