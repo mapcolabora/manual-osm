@@ -1,3 +1,7 @@
+{% hint style='danger' %}
+Esto que lees es un borrador. Si quieres, puedes ayudarnos a mejorarlo (¡estaremos encantados de que lo hagas!). Si quieres saber cómo hacerlo, visita [este enlace](https://mapcolabora.gitbooks.io/meta-manual/content/).
+{% endhint %}
+
 # Parte III: Recetario
 
 Aquí pondremos una breve explicación de los contenidos que vamos a encontrar en la Parte III, qué orden se ha seguido \(si es que lo hay\), decir que cada receta la ha redactado un grupo de personas...
@@ -38,6 +42,3 @@ A modo de ejemplo, y sin ningún orden específico podríamos poner estas receta
 2. Renombrarlo por lo que queráis
 3. Editarlo
 4. En caso de querer añadir imágenes, metedlas en la carpeta `03.Recetas/img`
-
-
-

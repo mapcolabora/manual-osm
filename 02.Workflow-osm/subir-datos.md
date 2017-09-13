@@ -1,3 +1,7 @@
+{% hint style='danger' %}
+Esto que lees es un borrador. Si quieres, puedes ayudarnos a mejorarlo (¡estaremos encantados de que lo hagas!). Si quieres saber cómo hacerlo, visita [este enlace](https://mapcolabora.gitbooks.io/meta-manual/content/).
+{% endhint %}
+
 # Subir datos
 
 Referencia: [https://wiki.openstreetmap.org\/wiki\/ES:Gu%C3%ADa\_del\_principiante\_1.4.2](https://wiki.openstreetmap.org/wiki/ES:Guía_del_principiante_1.4.2) \(este contenido está muy verde y desactualizado, pero la sección preguntas y respuestas es buena, incluso aunque es tremendísimamente breve\)
@@ -7,7 +11,7 @@ Referencia: [https://wiki.openstreetmap.org\/wiki\/ES:Gu%C3%ADa\_del\_principian
   * Notas
   * Trazas
   * Importaciones \(solo mención de que existen y que hay que seguir un protocolo\)
-  
+
 # JOSM
 ## Vincular nuestra cuenta de OSM con el editor JOSM
 
@@ -30,11 +34,3 @@ Para utilizar OAUTH deberemos realizar los pasos siguientes:
   8. Introduciremos nuestro nombre de usuario y contraseña en las casillas correspondientes
   9. Pulsar en el botón "Aceptar llave de acceso"
   10. Si todo ha ido bien (importante, debemos de tener conexión a Internet)
-
-
-
-
-
-
-
-

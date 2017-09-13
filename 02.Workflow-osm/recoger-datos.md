@@ -1,3 +1,7 @@
+{% hint style='danger' %}
+Esto que lees es un borrador. Si quieres, puedes ayudarnos a mejorarlo (¡estaremos encantados de que lo hagas!). Si quieres saber cómo hacerlo, visita [este enlace](https://mapcolabora.gitbooks.io/meta-manual/content/).
+{% endhint %}
+
 # Recoger datos
 
 Referencia: https://wiki.openstreetmap.org/wiki/ES:Beginners_Guide_1.1 \(no coincide exactamente con este planteamiento\)
@@ -13,5 +17,3 @@ Referencia: https://wiki.openstreetmap.org/wiki/ES:Beginners_Guide_1.1 \(no coin
   * Fieldpapers
   * GPS
   * Móvil
-
-

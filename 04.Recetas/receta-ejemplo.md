@@ -1,4 +1,6 @@
-(Puedes copiar esta receta y usarla como base para desarrollar una nueva)
+{% hint style='tip' %}
+Esto es tan solo una plantilla. Puedes copiar esta receta y usarla como base para desarrollar una nueva receta sobre cualquier tema relacionado con OSM.
+{% endhint %}
 
 # Título de la receta
 
@@ -29,4 +31,3 @@ Explicar paso n
 ## Resumen
 
 Resumirlo brevemente.
-
