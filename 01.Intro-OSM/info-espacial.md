@@ -5,3 +5,4 @@ Esto que lees es un borrador. Si quieres, puedes ayudarnos a mejorarlo (¡estare
 # Información espacial/Mapas:
 
 Información de referencia: http://learnosm.org/en/beginner/introduction/
+
