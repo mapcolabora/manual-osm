@@ -4,7 +4,8 @@
         "footnote-string-to-number",
         "hints",
         "youtube",
-        "image-captions"
+        "image-captions",
+        "page-toc"
     ],
     "pluginsConfig": {
         "comment": {
@@ -19,3 +20,4 @@
         }
     }
 }
+
