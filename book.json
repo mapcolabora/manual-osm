@@ -5,7 +5,7 @@
         "hints",
         "youtube",
         "image-captions",
-        "page-toc"
+        "simple-page-toc"
     ],
     "pluginsConfig": {
         "comment": {
@@ -18,6 +18,9 @@
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
             "position": "before-first"
         }
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        }
     }
 }
-
