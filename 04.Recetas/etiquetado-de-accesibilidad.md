@@ -15,14 +15,6 @@ Debido a que el colectivo de las personas con diversidad funcional es a su vez m
 La wiki de OSM tiene una [página específica dedicada a la discapacidad](http://wiki.openstreetmap.org/wiki/Disabilities) en la que todo tipo de etiquetados y proyectos relativos a este tema.
 {% endhint %}
 
-{% hint %}
-A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/limited` o `width=<anchura en metros>`. Se trata de las mismas convenciones utilizadas en la wiki de OSM para representar las distintas [claves con sus respectivos valores](http://wiki.openstreetmap.org/wiki/Tags) y que se traducen en lo siguiente: 
-* El item que está a la izquierda del símbolo `=` es la clave, mientras que el item que está a la izquierda es su valor
-* En caso de que haya varias opciones posibles para un valor se escribirán de este modo `*=yes/no/limited`, siendo respectivamente `yes`, `no` y `limited` las opciones posibles, pero dado que son excluyentes, solo se podrá utilizar una de ellas.
-* El símbolo `*` es un comodín y significa que puede tener cualquier valor. 
-* El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos
-{% endhint %}
-
 ## Ingredientes
 
 Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
@@ -61,6 +53,14 @@ Hay que tener en cuenta las siguientes consideraciones:
 {% endhint %}
 
 Por esos motivos las etiquetas e información que pondremos en un caso u otro dependerán de la geometría, tal y como se especifica a continuación:
+
+{% hint %}
+A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/limited` o `width=<anchura en metros>`. Se trata de las mismas convenciones utilizadas en la wiki de OSM para representar las distintas [claves con sus respectivos valores](http://wiki.openstreetmap.org/wiki/Tags) y que se traducen en lo siguiente: 
+* El item que está a la izquierda del símbolo `=` es la clave, mientras que el item que está a la izquierda es su valor
+* En caso de que haya varias opciones posibles para un valor se escribirán de este modo `*=yes/no/limited`, siendo respectivamente `yes`, `no` y `limited` las opciones posibles, pero dado que son excluyentes, solo se podrá utilizar una de ellas.
+* El símbolo `*` es un comodín y significa que puede tener cualquier valor. 
+* El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos
+{% endhint %}
 
 1. Etiquetado **en la vía**:
   * **Cruces de peatones** `highway=crossing`
