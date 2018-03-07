@@ -1,3 +1,7 @@
+---
+showToc: true
+---
+
 # Etiquetar aspectos relativos a la movilidad desde el punto de la accesibilidad y diversidad funcional en OSM
 Por: Carlos Cámara, César Canalís
 
@@ -37,6 +41,7 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 1. Seleccionar la geometría existente que representa el elemento a etiquetar (cruces, calles, escaleras...) o, si no existe, dibujarlaa partir de nuestras notas de campo mediante puntos o vías.
 1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
+
 
 
 ### Pasos de peatones
