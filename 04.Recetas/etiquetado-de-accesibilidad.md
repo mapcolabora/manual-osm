@@ -28,7 +28,7 @@ A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/li
 Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
 
 1. Disponer de los datos recogidos a partir de observaciones de campo (ver capítulo "[Recoger datos](/02.Workflow-osm/recoger-datos.md)" de este mismo libro)
-2. Utilizar un editor, ya sea id o JOSM
+2. Utilizar un editor, ya sea el editor integrado `id` o JOSM ([ver parte 3](/03.JOSM/readme.md "Parte 3: JOSM"))
 3. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
 
 ## Procedimiento
@@ -37,6 +37,7 @@ El procedimiento a seguir es el mismo en todos los casos:
 
 1. Seleccionar la geometría existente que representa el elemento a etiquetar (cruces, calles, escaleras...) o, si no existe, dibujarlaa partir de nuestras notas de campo mediante puntos o vías.
 1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
+
 
 ### Pasos de peatones
 
