@@ -76,12 +76,29 @@ Peldaños  | La existencia de peldaños debería complementarse con  el etiqueta
 
 ## Etiquetado de Pasos de peatones
 
-![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas (Fuente: CCM)](/04.Recetas/img/IMG_20160609_081418.jpg)
+Los pasos de peatones son elementos clave que condicionan la movilidad de las personas con diversidad funcional debido a la gran variables que contienen y a su ejecución dispar. Veamos el caso de la imagen siguiente: en este caso vemos que este cruce de peatones sería relevante etiquetar sus bordillos en forma de rampa que hacen posible que se pueda cruzar en silla de ruedas o el pavimento táctil y la presencia de semáforos acústicos.
 
-Los pasos de peatones son elementos clave que condicionan la movilidad de las personas con diversidad funcional debido a la gran variables que contienen y a su ejecución dispar. 
+![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas (Fuente: CCM)](/04.Recetas/img/IMG_20160609_081418.jpg)
 
 {% hint style='danger' %}
 La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
+{% endhint %}
+
+### Cruces de peatones como nodos:
+En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas identificadas en las tablas anteriores sobre el mismo punto**. La única excepción a esa regla la encontraremos en el caso en el que los bordillos sean distintos en los extremos de los cruces. 
+
+{% hint style='tip' %}
+**Caso práctico:** Supongamos que tenemos un cruce de peatones con semáforo acústico representado por un punto en el que en el lado derecho (siempre en el sentido de la marcha de la vía sobre la que está el punto) tiene una rampa y pavimento táctil pero el lado izquierdo, más antiguo, todavía no ha sido adaptado. En este caso tendríamos que etiquetar lo siguiente:
+
+* `highway=crossing` para indicar que se trata de un paso de peatones
+* `crossing=traffic_signals ` para indicar que se trata de un paso de peatones regulado por semáforos
+* `traffic_signals:sound=yes` para indicar que tiene señales acústicas.
+Hasta aquí todo normal, pero ahora viene la complicación, dado que deberemos especificar etiquetados distintos para el lado derecho y el izquierdo. Para ello añadimos el sufico `:left` a la propiedad que queramos matizar, quedando de este modo:
+* `kerb:right=lowered` para indicar que en el lado derecho hay rampa
+* `kerb:left=raised` para indicar que en el lado izquierdo hay un bordillo elevado
+* `tactile_paving:right=yes`
+* `tactile_paving:left=no`
+* Finalmente, como una persona en silla de ruedas no podría cruzar el paso de peatones por ser incapaz de subir al lado izquierdo, habría que añadir `wheelchair=no`, ya que es una característica que evalúa todas las anteriores.
 {% endhint %}
 
 ### Cruces de peatones como vías:
@@ -115,8 +132,6 @@ Por esos motivos las etiquetas e información que pondremos en un caso u otro de
   * **Tipo de bordillo** ya sea: enrasado (0cm),rebajado (3cm o menos) o elevado (más de 3 cm): `kerb_flush/lowered/raised` . Esto es importante porque determina en gran medida la siguiente etiqueta, si es accesible en silla de ruedas
   * **Accesible en silla de ruedas** si, no, o si se puede cruzar con ayuda o con una silla de ruedas motorizada `wheelchair=yes/no/limited`
 
-### Cruces de peatones como nodos:
-En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
 
 ## Etiquetado de Aceras
 En las aceras anotaremos su anchura, el tipo de pavimento y si se puede acceder en silla de ruedas o no. De nuevo, nos encontramos ante un caso en el que el etiquetado variará en función de cómo estén representadas gráficamente las aceras, pudiendo estar representadas como vías independientes o como etiquetas de una vía[^sideways].
