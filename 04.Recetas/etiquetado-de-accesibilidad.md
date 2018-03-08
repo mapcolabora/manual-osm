@@ -11,9 +11,6 @@ En esta receta aprenderemos a añadir información relativa a la movilidad en la
 Debido a que el colectivo de las personas con diversidad funcional es a su vez muy diverso y cada tipo de discapacidad tiene unas necesidades distintas, este documento únicamente se refiere a las personas con discapacidad motriz o visual.
 {% endhint %}
 
-{% hint style='tip' %}
-La wiki de OSM tiene una [página específica dedicada a la discapacidad](http://wiki.openstreetmap.org/wiki/Disabilities) en la que todo tipo de etiquetados y proyectos relativos a este tema.
-{% endhint %}
 
 ## Ingredientes
 
@@ -35,6 +32,30 @@ El procedimiento a seguir es el mismo en todos los casos:
 1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
 
 
+### Etiquetas relacionadas con la discapacidad
+
+Para esta receta nos centraremos en dos tipos de discapacidades, las relativas a la discapacidad motriz y a la visual, y para ello utilizaremos las etiquetas siguientes:
+
+{% hint style='tip' %}
+La wiki de OSM tiene una [página específica dedicada a la discapacidad](http://wiki.openstreetmap.org/wiki/Disabilities) en la que se recopila y discute información sobre etiquetados posibles y proyectos relativos a este tema.
+{% endhint %}
+
+Concepto/Característica  | Comentarios  | Valores posibles  | Etiquetado OSM equivalente | Enlace en la Wiki OSM
+--|---|---|---|--
+Accesibilidad en silla de ruedas  | Se trata de un valor subjetivo basado en el resto de características a analizar o basado en observación empírica  | Sí / No / Limitada /Con ayuda  | `wheelchair = yes/no/limited` | https://wiki.openstreetmap.org/wiki/Key:wheelchair
+Anchura  | Se describirá la anchura en metros (valor objetivo)  | Cualquier medida (en metros)  | `width=*` | https://wiki.openstreetmap.org/wiki/Key:width
+Tipo de bordillo  | El tipo de bordillo (y su altura) condicionan notablemente si un paso de peatones es accesible o no. Es posible que el tipo de bordillo sea distinto en los dos extremos de un cruce de peatones.  | **Elevado** (Existe un desnivel de más de 5cm entre calzada y acera); **Rebajado** (desnivel entre 5 y 3 cm entre acera y calzada que puede ser salvado con silla de ruedas -con o sin ayuda); **Enrasado** (no hay ningún desnivel entre acera y calzada)  |  `kerb=raised`, `kerb=lowered`, `kerb=flush` [^bordillos-distintos]| https://wiki.openstreetmap.org/wiki/Key:kerb
+  |   |   |   | 
+  |   |   |   |  
+  |   |   |   |  
+  |   |   |   |  
+  |   |   |   |  
+  |   |   |  
+  |   |   |  
+  |   |   |  
+  |   |   |  
+  |   |   |  
+  |   |   |  
 
 ### Etiquetado de Pasos de peatones
 
@@ -162,4 +183,5 @@ En esta receta hemos aprendido como añadir información relativa a la movilidad
 También hemos aprendido a cómo modificar ligeramente las geometrías añadiendo nuevos puntos o partiendo elementos existentes.
 
 [^colectivo-ioe]: Colectivo Ioé (2013): “Diversidad funcional en España. Hacia la inclusión en igualdad de las personas con discapacidades”, _Revista Española de Discapacidad_, 1 (1): 33-46. doi:[http://dx.doi.org/10.5569/2340-5104.01.01.02](http://dx.doi.org/10.5569/2340-5104.01.01.02)
+[^bordillos-distintos]: En caso en los que los bordillos sean distintos en los extremos de un mismo paso de peatones y este esté dibujado con un solo punto, el etiquetado variará ligeramente (ver sección específica)
 [^sideways]: Para más información al respecto remitimos a este artículo de la wiki de OSM: [http://wiki.openstreetmap.org/wiki/Sidewalks](http://wiki.openstreetmap.org/wiki/Sidewalks)
