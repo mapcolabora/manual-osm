@@ -85,7 +85,7 @@ La representación geométrica de un paso de peatones puede ser un punto o una v
 {% endhint %}
 
 ### Cruces de peatones como nodos:
-En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas identificadas en las tablas anteriores sobre el mismo punto**. La única excepción a esa regla la encontraremos en el caso en el que los bordillos sean distintos en los extremos de los cruces. 
+En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas identificadas en las tablas anteriores sobre el mismo punto**. La única excepción a esa regla la encontraremos en el caso en el que los bordillos sean distintos en los extremos de los cruces. Para ello añadimos el sufijo `:left` o `:right` a la propiedad que queramos matizar, como por ejemplo `tactile_paving:right=yes` o `kerb:left=flush`.
 
 {% hint style='tip' %}
 **Caso práctico:** Supongamos que tenemos un cruce de peatones con semáforo acústico representado por un punto en el que en el lado derecho (siempre en el sentido de la marcha de la vía sobre la que está el punto) tiene una rampa y pavimento táctil pero el lado izquierdo, más antiguo, todavía no ha sido adaptado. En este caso tendríamos que etiquetar lo siguiente:
@@ -93,7 +93,7 @@ En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo rep
 * `highway=crossing` para indicar que se trata de un paso de peatones
 * `crossing=traffic_signals ` para indicar que se trata de un paso de peatones regulado por semáforos
 * `traffic_signals:sound=yes` para indicar que tiene señales acústicas.
-Hasta aquí todo normal, pero ahora viene la complicación, dado que deberemos especificar etiquetados distintos para el lado derecho y el izquierdo. Para ello añadimos el sufico `:left` a la propiedad que queramos matizar, quedando de este modo:
+Hasta aquí todo normal, pero ahora viene la complicación, dado que deberemos especificar etiquetados distintos para el lado derecho y el izquierdo, quedando de este modo:
 * `kerb:right=lowered` para indicar que en el lado derecho hay rampa
 * `kerb:left=raised` para indicar que en el lado izquierdo hay un bordillo elevado
 * `tactile_paving:right=yes`
