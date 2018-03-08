@@ -32,7 +32,7 @@ El procedimiento a seguir es el mismo en todos los casos:
 1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
 
 
-### Etiquetas relacionadas con la discapacidad
+## Etiquetas relacionadas con la discapacidad
 
 Para esta receta nos centraremos en dos tipos de discapacidades, las relativas a la discapacidad motriz y a la visual, y para ello utilizaremos las etiquetas siguientes:
 
@@ -75,11 +75,7 @@ Calidad del firme  | Valoración subjetiva del estado del firme con respecto a l
 Peldaños  | La existencia de peldaños debería complementarse con  el etiquetado `wheelchair=no` | Número de peldaños  | `step_count=*`  | [Key:step_count](https://wiki.openstreetmap.org/wiki/Key:step_count)
  
 
-
-
-
-
-### Etiquetado de Pasos de peatones
+## Etiquetado de Pasos de peatones
 
 ![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas (Fuente: CCM)](/04.Recetas/img/IMG_20160609_081418.jpg)
 
@@ -89,7 +85,7 @@ Los pasos de peatones son elementos clave que condicionan la movilidad de las pe
 La representación geométrica de un paso de peatones puede ser un punto o una vía, en función de si el cruce está sobre una vía única (punto) o conecta varias vías (vía), ya sea porque cruza calles con dos vias independientes o porque cruza calzada y carriles bici o porque conecta dos aceras que están representadas gráficamente como vías independientes. A continuación se detallan las dos casuísticas de forma separada.
 {% endhint %}
 
-#### Cruces de peatones como vías:
+### Cruces de peatones como vías:
 Se trata del caso más complejo, dado que la vía representa el cruce en sí (el zebreado que interseca las distintas vías que cruza) mientras que los nodos de los extremos representan los bordillos, rampas, pavimentos y semáforos (si los hubiere). También pueden existir nodos intermedios que representen isletas o cruces que intersecan con carriles bici (a menudo no tienen semáforos ni pavimentos específicos). 
 
 {% hint style='danger' %}
@@ -120,15 +116,15 @@ Por esos motivos las etiquetas e información que pondremos en un caso u otro de
   * **Tipo de bordillo** ya sea: enrasado (0cm),rebajado (3cm o menos) o elevado (más de 3 cm): `kerb_flush/lowered/raised` . Esto es importante porque determina en gran medida la siguiente etiqueta, si es accesible en silla de ruedas
   * **Accesible en silla de ruedas** si, no, o si se puede cruzar con ayuda o con una silla de ruedas motorizada `wheelchair=yes/no/limited`
 
-#### Cruces de peatones como nodos:
+### Cruces de peatones como nodos:
 En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
 
-### Etiquetado de Aceras
+## Etiquetado de Aceras
 En las aceras anotaremos su anchura, el tipo de pavimento y si se puede acceder en silla de ruedas o no. De nuevo, nos encontramos ante un caso en el que el etiquetado variará en función de cómo estén representadas gráficamente las aceras, pudiendo estar representadas como vías independientes o como etiquetas de una vía[^sideways].
 
 ![Acera estrecha, con pendiente y rampas para coches que dificultan enormemente la circulación en silla de ruedas (Fuente: CCM)](/04.Recetas/img/IMG_20161203_121327.jpg)
 
-#### Aceras como vías independientes: 
+### Aceras como vías independientes: 
 En este caso tenemos una vía que representa la calzada de la calle y otra(s) distinta(s) que representa(n) la acera. Este sistema simplifica mucho el etiquetado pero exige que exista la geometría. Usaremos el siguiente etiquetado:
 * Especificaremos que se trata de una acera: `highway=footway`
 * Anchura (en metros) `width=<anchura en metros y usando el . como separador decimal>`. Esto es relevante porque en anchuras inferiores a 80cm no puede pasar una silla de ruedas. Con anchuras inferiores a 1m puede pasar pero con dificultad.
@@ -139,7 +135,7 @@ Hay que tener en cuenta que la anchura de la acera puede variar o incluso tener 
 * Rugosidad del pavimento (ver punto anterior): `smoothness=excellent/good/intermediate/bad...`
 * Todo lo anterior determinará si el tramo de acera que estamos etiquetando es accesible en silla de ruedas, no lo es en absoluto o se necesita ayuda (por ejemplo debido a una pendiente excesiva): `wheelchair=yes/no/limited`
 
-#### Aceras como etiquetas a una vía existente:
+### Aceras como etiquetas a una vía existente:
 En este caso no existe una geometría específica, y si anotamos etiquetas como la anchura o el pavimento, OSM entiende que en realidad se está describiendo la calzada en lugar de la acera. Por ello deberán hacerse estas dos consideraciones:
 
 1. Añadir la etiqueta `sidewalk=both/left/right/none` en función de si hay acera en ambos lados, a la izquierda o derecha (con respecto al sentido de la vía) o en ningún lado.
@@ -147,9 +143,9 @@ En este caso no existe una geometría específica, y si anotamos etiquetas como 
   * `sidewalk:both:width=*`
   * `sidewalk:both:smoothness=*`
   * `sidewalk:both:surface=*`
-  *  `sidewalk:both:wheelchair=*`
+  * `sidewalk:both:wheelchair=*`
 
-### Etiquetado de Escaleras
+## Etiquetado de Escaleras
 
 En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía existente) como se detalla a continuación:
 
@@ -162,7 +158,7 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 2. En los nodos de sus extremos:
   * Pavimento táctil: `tactile_paving=yes/no`
 
-### Etiquetando otros elementos
+## Etiquetando otros elementos
 Además de aceras, pasos de peatones o escaleras, pueden aplicarse los mismos criterios para etiquetar todo tipo de elementos que tengan relación con la accesibilidad de personas con discapacidad.
 
 Ejemplos de otros elementos interesantes podrían ser:
