@@ -23,6 +23,10 @@ Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente
 2. Utilizar un editor, ya sea el editor integrado `id` o JOSM ([ver parte 3](/03.JOSM/readme.md "Parte 3: JOSM"))
 3. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
 
+## Tabla de contenidos
+<!-- toc -->
+
+
 ## Procedimiento
 
 El procedimiento a seguir es el mismo en todos los casos:
@@ -30,9 +34,9 @@ El procedimiento a seguir es el mismo en todos los casos:
 1. Seleccionar la geometría existente que representa el elemento a etiquetar (cruces, calles, escaleras...) o, si no existe, dibujarlaa partir de nuestras notas de campo mediante puntos o vías.
 1. Etiquetar el elemento seleccionado en el paso anterior siguiendo las etiquetas específicas que se explican a continuación
 
-<!-- toc -->
 
-### Pasos de peatones
+
+### Etiquetado de Pasos de peatones
 
 ![Cruce de peatones frente a la estación de Delicias, con rampas, pavimento táctil, semáforos acústicos y cruce de bicicletas (Fuente: CCM)](/04.Recetas/img/IMG_20160609_081418.jpg)
 
@@ -82,7 +86,7 @@ A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/li
 #### Cruces de peatones como nodos:
 En el caso de los cruces como nodos es el caso más sencillo, ya que el nodo representa, a la vez, tanto el propio cruce como los semáforos (si existen) y los bordillos. Por tanto, deberemos **añadir todas las etiquetas anteriores al mismo punto**.
 
-### Aceras
+### Etiquetado de Aceras
 En las aceras anotaremos su anchura, el tipo de pavimento y si se puede acceder en silla de ruedas o no. De nuevo, nos encontramos ante un caso en el que el etiquetado variará en función de cómo estén representadas gráficamente las aceras, pudiendo estar representadas como vías independientes o como etiquetas de una vía[^sideways].
 
 ![Acera estrecha, con pendiente y rampas para coches que dificultan enormemente la circulación en silla de ruedas (Fuente: CCM)](/04.Recetas/img/IMG_20161203_121327.jpg)
@@ -108,7 +112,7 @@ En este caso no existe una geometría específica, y si anotamos etiquetas como 
   * `sidewalk:both:surface=*`
   *  `sidewalk:both:wheelchair=*`
 
-### Escaleras
+### Etiquetado de Escaleras
 
 En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía existente) como se detalla a continuación:
 
@@ -123,7 +127,7 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 
 ## Resumen
 
-En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas que se aplican a distintas geometrías, a saber:
+En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas. Estas etiquetas se pueden aplicar a distintas geometrías (puntos, líneas) en función del elemento que describan (pasos de peatones, aceras, escaleras, paradas de bus...) y se resumen en las siguientes:
 
 * Discapacidad visual:
   * Pavimento táctil: `tactile_paving=yes/no/incorrect`
