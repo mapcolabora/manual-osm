@@ -125,6 +125,17 @@ En caso de que existan escaleras dibujaremos una vía (o etiquetaremos una vía 
 2. En los nodos de sus extremos:
   * Pavimento táctil: `tactile_paving=yes/no`
 
+### Etiquetando otros elementos
+Además de aceras, pasos de peatones o escaleras, pueden aplicarse los mismos criterios para etiquetar todo tipo de elementos que tengan relación con la accesibilidad de personas con discapacidad.
+
+Ejemplos de otros elementos interesantes podrían ser:
+
+* Paradas de autobús
+* Postes informativos (por ejemplo con información turística)
+* Lavabos públicos
+* Accesibilidad en silla de ruedas en edificios públicos, tiendas...
+* ...
+
 ## Resumen
 
 En esta receta hemos aprendido como añadir información relativa a la movilidad urbana desde el punto de vista de la accesibilidad a través del etiquetado de unas etiquetas muy concretas. Estas etiquetas se pueden aplicar a distintas geometrías (puntos, líneas) en función del elemento que describan (pasos de peatones, aceras, escaleras, paradas de bus...) y se resumen en las siguientes:
