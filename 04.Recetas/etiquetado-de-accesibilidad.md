@@ -20,7 +20,7 @@ La wiki de OSM tiene una [página específica dedicada a la discapacidad](http:/
 Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
 
 1. Disponer de los datos recogidos a partir de observaciones de campo (ver capítulo "[Recoger datos](/02.Workflow-osm/recoger-datos.md)" de este mismo libro)
-2. Utilizar un editor, ya sea el editor integrado `id` o JOSM ([ver parte 3](/03.JOSM/readme.md "Parte 3: JOSM"))
+2. Utilizar un editor, ya sea el editor integrado en el navegador (llamado [iD](http://learnosm.org/en/beginner/id-editor/)) o el editor avanzado JOSM ([ver parte 3](/03.JOSM/readme.md "Parte 3: JOSM"))
 3. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
 
 ## Tabla de contenidos
