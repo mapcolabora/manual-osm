@@ -45,16 +45,17 @@ A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/li
 * El item que está a la izquierda del símbolo `=` es la clave, mientras que el item que está a la izquierda es su valor
 * En caso de que haya varias opciones posibles para un valor se escribirán de este modo `*=yes/no/limited`, siendo respectivamente `yes`, `no` y `limited` las opciones posibles, pero dado que son excluyentes, solo se podrá utilizar una de ellas.
 * El símbolo `*` es un comodín y significa que puede tener cualquier valor. 
-* El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos
+* El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos y se sustituirá por el valor real que corresponda.
+* Las claves y valores siempre **se escribirán en minúsculas**.
 {% endhint %}
 
 ### Discapacidad motriz
 
 Concepto/Característica  | Comentarios  | Valores posibles  | Etiquetado OSM equivalente | Enlace en la Wiki OSM
 --|---|---|---|--
-Accesibilidad en silla de ruedas  | Se trata de un valor subjetivo basado en el resto de características a analizar o basado en observación empírica  | Sí / No / Limitada /Con ayuda  | `wheelchair=yes/no/limited` | https://wiki.openstreetmap.org/wiki/Key:wheelchair
-Anchura de la acera  | Se describirá la anchura en metros (valor objetivo)  | Cualquier medida (en metros)  | `width=<anchura en metros>` | https://wiki.openstreetmap.org/wiki/Key:width
-Tipo de bordillo  | El tipo de bordillo (y su altura) condicionan notablemente si un paso de peatones es accesible o no. Es posible que el tipo de bordillo sea distinto en los dos extremos de un cruce de peatones.  | **Elevado** (Existe un desnivel de más de 5cm entre calzada y acera); **Rebajado** (desnivel entre 5 y 3 cm entre acera y calzada que puede ser salvado con silla de ruedas -con o sin ayuda); **Enrasado** (no hay ningún desnivel entre acera y calzada)  |  `kerb=raised`, `kerb=lowered`, `kerb=flush` [^bordillos-distintos]| https://wiki.openstreetmap.org/wiki/Key:kerb
+Accesibilidad en silla de ruedas  | Se trata de un valor subjetivo basado en el resto de características a analizar o basado en observación empírica  | Sí / No / Limitada /Con ayuda  | `wheelchair=yes/no/limited` | [Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)
+Anchura de la acera  | Se describirá la anchura en metros (valor objetivo)  | Cualquier medida (en metros)  | `width=<anchura en metros>` | [Key:width](https://wiki.openstreetmap.org/wiki/Key:width)
+Tipo de bordillo  | El tipo de bordillo (y su altura) condicionan notablemente si un paso de peatones es accesible o no. Es posible que el tipo de bordillo sea distinto en los dos extremos de un cruce de peatones.  | **Elevado** (Existe un desnivel de más de 5cm entre calzada y acera); **Rebajado** (desnivel entre 5 y 3 cm entre acera y calzada que puede ser salvado con silla de ruedas -con o sin ayuda); **Enrasado** (no hay ningún desnivel entre acera y calzada)  |  `kerb=raised`, `kerb=lowered`, `kerb=flush` [^bordillos-distintos]| [Key:kerb](https://wiki.openstreetmap.org/wiki/Key:kerb)
 Tipo de pavimento |    |   |   | 
   |   |   |   |  
   |   |   |   |  
