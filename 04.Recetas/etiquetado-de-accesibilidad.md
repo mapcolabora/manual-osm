@@ -46,7 +46,7 @@ A lo largo de esta receta escribiremos a menudo cosas como `wheelchair=yes/no/li
 * En caso de que haya varias opciones posibles para un valor se escribirán de este modo `*=yes/no/limited`, siendo respectivamente `yes`, `no` y `limited` las opciones posibles, pero dado que son excluyentes, solo se podrá utilizar una de ellas.
 * El símbolo `*` es un comodín y significa que puede tener cualquier valor. 
 * El  texto entre los símbolos `<` y`>` es una explicación para el lector. Cuando queramos utilizarlo en OSM no se pondrán dichos símbolos y se sustituirá por el valor real que corresponda.
-* Las claves y valores siempre **se escribirán en minúsculas**.
+* Las claves y valores siempre **se escribirán en minúsculas y sin espacios entre ellos**.
 {% endhint %}
 
 ### Discapacidad motriz
@@ -60,14 +60,13 @@ Tipo de pavimento |  En esta tabla se detallan únicamente los pavimentos más h
 Calidad del firme  | Valoración subjetiva del estado del firme con respecto a la rugosidad de la superficie y lo fácil o difícil que resulta desplazarse sobre él   |   |  `smoothness=excellent / good/ intermediate / bad` |  [Key:smoothness](https://wiki.openstreetmap.org/wiki/Key:smoothness)
 Peldaños  | La existencia de peldaños debería complementarse con  el etiquetado `wheelchair=no` | Número de peldaños  | `step_count=*`  | [Key:step_count](https://wiki.openstreetmap.org/wiki/Key:step_count)
  
- 
 
 ### Discapacidad motriz
 
 Característica  | Comentarios  | Valores posibles  | Etiquetado OSM equivalente | Enlace en la Wiki OSM
 --|---|---|---|--
-Semáforos acústicos  |   |   |   | 
-Pavimento táctil  |   |   |   |   
+Semáforos acústicos  |   |  Sí o no | `traffic_signals:sound= yes / no`  | [Key:traffic_signals:sound](https://wiki.openstreetmap.org/wiki/Key:traffic_signals:sound)
+Pavimento táctil  | Existencia de pavimento rugoso que avisa de la finalización de acera e inicio de calzada. En algunos casos también sirve para orientarse en una parada de bus, metro o tranvía   | Sí, ornamental, decorativo  | `tactile_paving=yes/primite/no`  | [Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)
 Anchura de la acera  | Se describirá la anchura en metros (valor objetivo)  | Cualquier medida (en metros)  | `width=<anchura en metros>` | [Key:width](https://wiki.openstreetmap.org/wiki/Key:width)
 Tipo de bordillo  | El tipo de bordillo (y su altura) condicionan notablemente si un paso de peatones es accesible o no. Es posible que el tipo de bordillo sea distinto en los dos extremos de un cruce de peatones.  | **Elevado** (Existe un desnivel de más de 5cm entre calzada y acera); **Rebajado** (desnivel entre 5 y 3 cm entre acera y calzada que puede ser salvado con silla de ruedas -con o sin ayuda); **Enrasado** (no hay ningún desnivel entre acera y calzada)  |  `kerb=raised`, `kerb=lowered`, `kerb=flush` [^bordillos-distintos]| [Key:kerb](https://wiki.openstreetmap.org/wiki/Key:kerb)
 Tipo de pavimento |  En esta tabla se detallan únicamente los pavimentos más habituales. Dada la gran variedad de opciones, reomendamos visitar [esta página de la wiki de OSM](https://wiki.openstreetmap.org/wiki/Key:surface)  | Pavimento sin espeficar, Adoquines, Asfalto, Pavimento, Sin pavimentar  | `surface=paved`, `surface=sett`, `surface=asphalt`, `surface=paving_stones`, `surface=unpaved`  | [Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)
