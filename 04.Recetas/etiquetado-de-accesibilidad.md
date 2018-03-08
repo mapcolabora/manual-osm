@@ -64,11 +64,16 @@ Peldaños  | La existencia de peldaños debería complementarse con  el etiqueta
 
 ### Discapacidad motriz
 
-Concepto/Característica  | Comentarios  | Valores posibles  | Etiquetado OSM equivalente | Enlace en la Wiki OSM
+Característica  | Comentarios  | Valores posibles  | Etiquetado OSM equivalente | Enlace en la Wiki OSM
 --|---|---|---|--
-  |   |   |   | 
-  |   |   |   |   
-  |   |   |   | 
+Semáforos acústicos  |   |   |   | 
+Pavimento táctil  |   |   |   |   
+Anchura de la acera  | Se describirá la anchura en metros (valor objetivo)  | Cualquier medida (en metros)  | `width=<anchura en metros>` | [Key:width](https://wiki.openstreetmap.org/wiki/Key:width)
+Tipo de bordillo  | El tipo de bordillo (y su altura) condicionan notablemente si un paso de peatones es accesible o no. Es posible que el tipo de bordillo sea distinto en los dos extremos de un cruce de peatones.  | **Elevado** (Existe un desnivel de más de 5cm entre calzada y acera); **Rebajado** (desnivel entre 5 y 3 cm entre acera y calzada que puede ser salvado con silla de ruedas -con o sin ayuda); **Enrasado** (no hay ningún desnivel entre acera y calzada)  |  `kerb=raised`, `kerb=lowered`, `kerb=flush` [^bordillos-distintos]| [Key:kerb](https://wiki.openstreetmap.org/wiki/Key:kerb)
+Tipo de pavimento |  En esta tabla se detallan únicamente los pavimentos más habituales. Dada la gran variedad de opciones, reomendamos visitar [esta página de la wiki de OSM](https://wiki.openstreetmap.org/wiki/Key:surface)  | Pavimento sin espeficar, Adoquines, Asfalto, Pavimento, Sin pavimentar  | `surface=paved`, `surface=sett`, `surface=asphalt`, `surface=paving_stones`, `surface=unpaved`  | [Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)
+Calidad del firme  | Valoración subjetiva del estado del firme con respecto a la rugosidad de la superficie y lo fácil o difícil que resulta desplazarse sobre él   |   |  `smoothness=excellent / good/ intermediate / bad` |  [Key:smoothness](https://wiki.openstreetmap.org/wiki/Key:smoothness)
+Peldaños  | La existencia de peldaños debería complementarse con  el etiquetado `wheelchair=no` | Número de peldaños  | `step_count=*`  | [Key:step_count](https://wiki.openstreetmap.org/wiki/Key:step_count)
+ 
 
 
 
