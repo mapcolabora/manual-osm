@@ -11,6 +11,7 @@ Hay muchas maneras de contribuir en OSM y, por lo general, no es necesario segui
 
 1. Visitar el enlace https://www.openstreetmap.org/user/new o hacer clic en el botón de registro (esquina superior derecha)
 2. Rellenar los campos con nuestros datos en el formulario de registro (ver foto). Únicamente es necesario rellenar un email, un nombre de usuario de nuestra elección y una contraseña que únicamente nosotros sepamos.
+
 ![Formulario de registro de usuario](/assets/osm-register.png)
 
 
