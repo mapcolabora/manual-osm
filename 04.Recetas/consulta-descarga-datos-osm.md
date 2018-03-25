@@ -1,7 +1,3 @@
-{% hint style='tip' %}
-Esto es tan solo una plantilla. Puedes copiar esta receta y usarla como base para desarrollar una nueva receta sobre cualquier tema relacionado con OSM.
-{% endhint %}
-
 # Consulta y descarga de datos de OSM
 
 Por: Carlos Cámara
@@ -58,10 +54,16 @@ Ahora que ya tenemos claro que lo que estamos buscando se describe siempre en OS
 {% endhint %}
 
 ### Paso 2: Hacer la consulta a OSM mediante 
-Uno de los servicios más habituales para hacer consultas es [Overpass Turbo](http://overpass-turbo.eu/)[^overpass-turbo]
+Uno de los servicios más habituales para hacer consultas es [Overpass Turbo](http://overpass-turbo.eu/). Overpass Turbo es una web que ofrece una interfaz gráfica para ejecutar consultas utilizando la sintaxis de la [API Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) (ver captura).
+
+![Captura de pantalla de Overpass Turbo](/assets/overpass-turbo.png)
+
+
 
 ## Resumen
 
 Resumirlo brevemente.
 
 [^nominatim]: El buscador que utiliza OSM se llama "Nominatim" y es en realidad un servicio externo a OSM y uno de los múltiples buscadores de direcciones que existen. Para reducir los tiempos de búsqueda, Nominatim únicamente busca los valores de las etiquetas relativas a los nombres de los lugares y de sus direcciones. Además, también asume que estamos buscando cosas cercanas a la zona que estamos viendo en la pantalla en ese momento.
+
+
