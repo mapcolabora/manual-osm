@@ -104,7 +104,9 @@ Al hacerlo, tendremos un archivo en formato GeoJSON que podremos utilizar en un 
 
 En el supuesto de que lo que quisiéramos fuese trabajar con los museos de Zaragoza en QGIS, podemos utilizar el plugin QuickOSM en sustitución de los pasos anteriores.
  
-QuickOSM es un plugin para QGIS 2.18 que realiza consultas Overpass de forma muy similar a OVerpass Turbo pero mostrando un cuadro de diálogo
+QuickOSM es un plugin para QGIS 2.18 que realiza consultas Overpass de forma muy similar a Overpass Turbo pero mostrando un cuadro de diálogo integrado en la aplicación (ver captura de pantalla).
+
+![Captura de pantalla de QuickOSM](/assets/quickosm.png)
 
 
 ## Resumen
