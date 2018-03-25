@@ -16,13 +16,16 @@ Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente
 4. Opcionalmente (y como alternativa al punto anterior): QGIS y su plugin QuickOSM
 Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
 
-
-
-
-
 ## Procedimiento
 
 Para la realización de esta receta vamos a suponer que queremos realizar un mapa que muestre información sobre los museos de Zaragoza y para ello queremos descargar toda la información disponible en OSM sobre ellos.
+
+Para ello realizaremos los siguientes pasos:
+
+1. Elegir las claves y valores adecuados 
+2. Construir la consulta a OSM
+3. Descargar los resultados
+4. (opcional) Utilizar QGIS y QuickOSM
 
 ### Paso 1: Elegir las claves y valores adecuados
 
@@ -100,7 +103,7 @@ Para nuestro ejemplo elegiríamos la opción 1: exportar datos y haríamos clic 
 
 Al hacerlo, tendremos un archivo en formato GeoJSON que podremos utilizar en un gran número de softwares y servicios que trabajan con información geográfica, entre ellos QGIS, y ya habríamos terminado.
 
-{% hint style='alert' %}
+{% hint style='danger' %}
 Es importante señalar que los datos que estamos exportando son los que estaban disponibles en OSM en el momento de hacer la consulta. Si, posteriormente a ese momento, alguien actualizase los datos (añadiendo nuevos museos o actualizando la información de museos existentes), los datos no se actualizarán y mostrarán información obsoleta, dado que ya no existe ninguna vinculación con OSM.
 {% endhint %}
 
