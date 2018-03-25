@@ -2,7 +2,7 @@
 Esto es tan solo una plantilla. Puedes copiar esta receta y usarla como base para desarrollar una nueva receta sobre cualquier tema relacionado con OSM.
 {% endhint %}
 
-# Título de la receta
+# Consulta y descarga de datos de OSM
 
 Por: Autor 1, Autor 2... \(nombre de los autores\)
 
