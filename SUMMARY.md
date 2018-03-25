@@ -16,9 +16,10 @@
   * [Instalación de JOSM](03.JOSM/instalacion-de-josm.md)
   * [Vincular cuenta de OSM](03.JOSM/vincular-cuenta-osm.md)
 * [Parte 4: Recetas](04.Recetas/README.md)
-  * [Receta ejemplo \(Plantilla\)](04.Recetas/receta-ejemplo.md)
   * [Etiquetado de paradas de bus](04.Recetas/receta-de-prueba-buses.md)
   * [Etiquetado de Accesibilidad](04.Recetas/etiquetado-de-accesibilidad.md)
   * [Añadir edificios](04.Recetas/anadir-edificios.md)
   * [Crear mapas dinámicos en uMap](04.Recetas/crear-mapas-dinámicos-con-overpass.md)
+  * [Consulta y descarga de datos de OSM](04.Recetas/consulta-descarga-datos-osm.md)
+  * [Receta ejemplo \(Plantilla\)](04.Recetas/receta-ejemplo.md)
 
