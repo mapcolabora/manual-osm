@@ -50,20 +50,44 @@ Imaginemos que queremos descargar todos los museos de Zaragoza. Lo primero que d
  
 Ahora que ya tenemos claro que lo que estamos buscando se describe siempre en OSM de este modo `tourism=museum` podemos hacer una consulta a la base de datos para que nos devuelva todos los museos que existen en Zaragoza. 
 
-{% hint style='tip' %}Las consultas son en realidad búsquedas que, a diferencia de lo que ocurre con el buscador de OSM[^nominatim], permiten la utilización de varios parámetros y devuelve todos los resultados que coinciden con los criterios de búsqueda. 
+{% hint style='tip' %}
+Las consultas son en realidad búsquedas que, a diferencia de lo que ocurre con el buscador de OSM[^nominatim], permiten la utilización de varios parámetros y devuelve todos los resultados que coinciden con los criterios de búsqueda. 
 {% endhint %}
 
-### Paso 2: Hacer la consulta a OSM mediante 
+### Paso 2: Construir la consulta a OSM
 Uno de los servicios más habituales para hacer consultas es [Overpass Turbo](http://overpass-turbo.eu/). Overpass Turbo es una web que ofrece una interfaz gráfica para ejecutar consultas utilizando la sintaxis de la [API Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) (ver captura).
 
 ![Captura de pantalla de Overpass Turbo](/assets/overpass-turbo.png)
 
+Para construir la consulta podemos escribirla directamente en la parte izquierda de la pantalla, utilizando la sintaxis Overpass, o bien utilizar el asistente que la escribirá por nosotros. Optaremos por esta segunda opción. Para ello basta con hacer clic en el botón `Asistente` que aparece en la parte superior de la pantalla. Al hacerlo, se abre una ventana nueva con un cuadro de texto en el que deberemos introducir nuestros términos de búsqueda (ver captura).
 
+![El asistente de Overpass Turbo permite introducir nuestra búsqueda y ofrece también ejemplos de ayuda.](/assets/overpass-turbo-wizard.png)
+
+Hemos visto en el paso anterior que para encontrar todos los museos debemos introducir la consulta `tourism=museum`. Ahora falta indicarle que, de todos los museos de todo el mundo que están en OpenStreetMap, únicamente queremos los que se encuentran en Zaragoza. Por defecto, Overpass busca los resultados que se encuentran en los límites del mapa que se muestra en la parte derecha de la pantalla. Por tanto, para limitar los resultados a los que se encuentran en Zaragoza tenemos dos opciones: la primera consiste en desplazarnos por el mapa hasta encuadrar la totalidad de Zaragoza en la pantalla derecha y ejecutar la consulta. La segunda consiste en añadir `in Zaragoza` (o el nombre de la ciudad o región que queramos buscar) a la consulta anterior[^region]. Tal y como muestra la figura, nuestra consulta final quedaría de la forma siguiente: `tourism=museum in Zaragoza`.
+
+Una vez hayamos escrito los criterios de la consulta deberemos ejecutarla, para lo cual haremos clic en el botón `construir y ejecutar la consulta`. Al hacerlo, se producen dos cosas: 
+
+1. Se redacta la consulta en la parte izquierda de la pantalla utilizando la sintaxis de Overpass (es lo que se llama "construir la consulta").
+2. Se buscan todos los elementos que cumplen las condiciones de la consulta (la consulta se ejecuta) y se muestran en el mapa de forma destacada (además, también podemos hacer clic sobre los resultados para conocer la información de ese elemento y comprobar el resultado).
+
+{% hint style='tip' %}
+Las consultas de overpass pueden tener más de un criterio a la vez añadiendo el operador `and`. Si, por ejemplo, quisiésemos buscar todos los museos de Zaragoza gestionados por el Ayuntamiento, podríamos hacer una consulta como esta: `tourism=museum and operator="Ayuntamiento de Zaragoza" in Zaragoza`.
+{% endhint %}
+
+{% hint style='tip' %}
+Hasta ahora siempre hemos introducido búsquedas que tenían una clave y un valor, pero también pueden hacerse búsquedas que únicamente tengan una clave, sin especificar el valor. De este modo obtendremos todos los elementos que tienen información sobre esa clave (sea la que sea, siempre que no esté vacía). Imaginemos por un momento que, en lugar de buscar todos los museos, queremos buscar todos los elementos relativos al turismo, como hoteles, hostales, galerías de arte... y, por supuesto y como hemos visto a lo largo de esta explicación, también los museos[^key:tourism]. En este caso, deberíamos escribir `tourism=*` donde `*` funciona como comodín para indicar que buscamos todos los posibles valores de esta clave.
+{% endhint %}
+
+{% hint style='tip' %}
+En caso de no recordar todo esto, el propio asistente ofrece unos ejemplos de las casuísticas más habituales.
+{% endhint %}
+
+### Paso 3: Descargar los resultados
 
 ## Resumen
 
 Resumirlo brevemente.
 
 [^nominatim]: El buscador que utiliza OSM se llama "[Nominatim](https://nominatim.openstreetmap.org/)" y es en realidad un servicio externo a OSM y uno de los múltiples buscadores de direcciones que existen. Para reducir los tiempos de búsqueda, Nominatim únicamente busca los valores de las etiquetas relativas a los nombres de los lugares y de sus direcciones. Además, también asume que estamos buscando cosas cercanas a la zona que estamos viendo en la pantalla en ese momento.
-
-
+[^region]: Para que este método funcione es necesario que la región geográfica que escribamos (puede ser el nombre de un país, una comunidad autónoma, una provincia, una ciudad, un barrio...) esté definida como área y, por tanto, tenga una superfície dentro de la cual buscar. Esto no pasa, por ejemplo, con los barrios de Zaragoza, que están introducidos como puntos y, por tanto, si quisieramos limitar nuestra búsqueda a un barrio concreto deberíamos utilizar el método anterior y encuadrar en el mapa los límites del barrio.
+[^key:tourism]: Para una descripción de todos los elementos que incluye la clave `tourism` debemos visitar la wiki específica para esta categoría: [https://wiki.openstreetmap.org/wiki/Key:tourism](https://wiki.openstreetmap.org/wiki/Key:tourism). Por regla general, siempre es recomendable visitar la wiki de las categorías antes de realizar una consulta para saber si describen lo que realmente estamos buscando.
