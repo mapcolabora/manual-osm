@@ -57,7 +57,7 @@ Las consultas son en realidad búsquedas que, a diferencia de lo que ocurre con 
 ### Paso 2: Construir la consulta a OSM
 Uno de los servicios más habituales para hacer consultas es [Overpass Turbo](http://overpass-turbo.eu/). Overpass Turbo es una web que ofrece una interfaz gráfica para ejecutar consultas utilizando la sintaxis de la [API Overpass](https://wiki.openstreetmap.org/wiki/Overpass_API) (ver captura).
 
-![Captura de pantalla de Overpass Turbo](/assets/overpass-turbo.png)
+![Captura de pantalla de Overpass Turbo. La mitad izquierda muestra la consulta en sintaxis Overpass. La mitad derecha, un mapa con los resultados de la consulta](/assets/overpass-turbo.png)
 
 Para construir la consulta podemos escribirla directamente en la parte izquierda de la pantalla, utilizando la sintaxis Overpass, o bien utilizar el asistente que la escribirá por nosotros. Optaremos por esta segunda opción. Para ello basta con hacer clic en el botón `Asistente` que aparece en la parte superior de la pantalla. Al hacerlo, se abre una ventana nueva con un cuadro de texto en el que deberemos introducir nuestros términos de búsqueda (ver captura).
 
