@@ -10,11 +10,11 @@ A lo largo de las páginas anteriores ha quedado claro que OpenStreetMap es una 
 
 Para seguir los pasos que se detallan a continuación necesitaremos lo siguiente:
 
-1. Tener claro cómo se almacena la información textual en OSM
+1. Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
 2. Conocer las claves y valores que describen los elementos que queremos buscar
 3. Un constructor de consultas para OSM como [Overpass Turbo](http://overpass-turbo.eu/)
 4. Opcionalmente (y como alternativa al punto anterior): QGIS y su plugin QuickOSM
-Estar familiarizado con el etiquetado en OSM (en su defecto puedes empezar a leer [este enlace](http://learnosm.org/es/beginner/start-osm/) )
+
 
 ## Procedimiento
 
