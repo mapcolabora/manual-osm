@@ -84,9 +84,32 @@ En caso de no recordar todo esto, el propio asistente ofrece unos ejemplos de la
 
 ### Paso 3: Descargar los resultados
 
+Al final del paso anterior hemos conseguido visualizar todos los elementos que cumplen nuestras condiciones de búsqueda (la consulta propiamente dicha). Sin embargo, por el momento únicamente podemos hacer clic sobre ellos para ver qué información tiene OSM sobre ellos.
+
+Dado que lo que buscamos es poder utilizar esos datos en una aplicación externa (como podría ser QGIS) sería estupendo si pudiésemos hacer una copia de los datos específicos que tiene OSM para poder usarlos sin conexión y sin necesidad de recurrir a OSM para nada más. De eso es de lo que se encarga la opción **Exportar** que aparece en la barra superior.
+
+![La ventana Exportar ofrece opción de exportar los datos de la consulta, una imagen con el mapa y los resultados o la propia consulta](/assets/overpass-turbo-export.png)
+
+Al hacer clic en el botón **Exportar** se abrirá una ventana (ver captura de pantalla superior) que ofrece varias opciones:
+
+1. Exportar los **datos**: con esta opción lo que se exporta son los resultados de la consulta, tanto la información geográfica como los atributos que describen a cada entidad. Dentro de esta sección podemos elegir distintos formatos así como descargarlos o copiar el contenido del archivo.
+2. Exportar el **mapa**: con esta opción se exporta un mapa como el que se mostraba en la parte derecha de la pantalla. Este mapa puede ser estático (una imagen) o interactivo.
+3. Exportar la **consulta**: con esta opción se exporta el código de la consulta Overpass que se escribe en la parte izquierda de la pantalla.
+
+Para nuestro ejemplo elegiríamos la opción 1: exportar datos y haríamos clic sobre el enlace "descargar como GeoJSON", por tratarse de un formato abierto muy utilizado para visualizar información geoespacial ya que puede ser abierto por la gran mayoría de programas que trabajan con estos datos.
+
+Al hacerlo, tendremos un archivo en formato GeoJSON que podremos utilizar en un gran número de softwares y servicios que trabajan con información geográfica, entre ellos QGIS, y ya habríamos terminado.
+
+### (Opcional): Utilizar QGIS y el plugin QuickOSM
+
+En el supuesto de que lo que quisiéramos fuese trabajar con los museos de Zaragoza en QGIS, podemos utilizar el plugin QuickOSM en sustitución de los pasos anteriores.
+ 
+QuickOSM es un plugin para QGIS 2.18 que realiza consultas Overpass de forma muy similar a OVerpass Turbo pero mostrando un cuadro de diálogo
+
+
 ## Resumen
 
-Resumirlo brevemente.
+En esta receta hemos visto cómo podemos descargar información específica de OSM mediante la creación de consultas overpass, que pueden ser tan complejas y específicas como queramos, y cómo podemos descargar los resultados para poder utilizarlos sin conexión a OSM e incluso en programas y servicios de terceras partes.
 
 [^nominatim]: El buscador que utiliza OSM se llama "[Nominatim](https://nominatim.openstreetmap.org/)" y es en realidad un servicio externo a OSM y uno de los múltiples buscadores de direcciones que existen. Para reducir los tiempos de búsqueda, Nominatim únicamente busca los valores de las etiquetas relativas a los nombres de los lugares y de sus direcciones. Además, también asume que estamos buscando cosas cercanas a la zona que estamos viendo en la pantalla en ese momento.
 [^region]: Para que este método funcione es necesario que la región geográfica que escribamos (puede ser el nombre de un país, una comunidad autónoma, una provincia, una ciudad, un barrio...) esté definida como área y, por tanto, tenga una superfície dentro de la cual buscar. Esto no pasa, por ejemplo, con los barrios de Zaragoza, que están introducidos como puntos y, por tanto, si quisieramos limitar nuestra búsqueda a un barrio concreto deberíamos utilizar el método anterior y encuadrar en el mapa los límites del barrio.
