@@ -100,6 +100,12 @@ Para nuestro ejemplo elegiríamos la opción 1: exportar datos y haríamos clic 
 
 Al hacerlo, tendremos un archivo en formato GeoJSON que podremos utilizar en un gran número de softwares y servicios que trabajan con información geográfica, entre ellos QGIS, y ya habríamos terminado.
 
+{% hint style='alert' %}
+Es importante señalar que los datos que estamos exportando son los que estaban disponibles en OSM en el momento de hacer la consulta. Si, posteriormente a ese momento, alguien actualizase los datos (añadiendo nuevos museos o actualizando la información de museos existentes), los datos no se actualizarán y mostrarán información obsoleta, dado que ya no existe ninguna vinculación con OSM.
+{% endhint %}
+
+
+
 ### (Opcional): Utilizar QGIS y el plugin QuickOSM
 
 En el supuesto de que lo que quisiéramos fuese trabajar con los museos de Zaragoza en QGIS, podemos utilizar el plugin QuickOSM en sustitución de los pasos anteriores.
