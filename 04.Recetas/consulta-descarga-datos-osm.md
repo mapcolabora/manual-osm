@@ -64,6 +64,6 @@ Uno de los servicios más habituales para hacer consultas es [Overpass Turbo](ht
 
 Resumirlo brevemente.
 
-[^nominatim]: El buscador que utiliza OSM se llama "Nominatim" y es en realidad un servicio externo a OSM y uno de los múltiples buscadores de direcciones que existen. Para reducir los tiempos de búsqueda, Nominatim únicamente busca los valores de las etiquetas relativas a los nombres de los lugares y de sus direcciones. Además, también asume que estamos buscando cosas cercanas a la zona que estamos viendo en la pantalla en ese momento.
+[^nominatim]: El buscador que utiliza OSM se llama "[Nominatim](https://nominatim.openstreetmap.org/)" y es en realidad un servicio externo a OSM y uno de los múltiples buscadores de direcciones que existen. Para reducir los tiempos de búsqueda, Nominatim únicamente busca los valores de las etiquetas relativas a los nombres de los lugares y de sus direcciones. Además, también asume que estamos buscando cosas cercanas a la zona que estamos viendo en la pantalla en ese momento.
 
 
