@@ -117,7 +117,7 @@ QuickOSM es un plugin para QGIS 2.18 que realiza consultas Overpass de forma muy
 
 ![Captura de pantalla de QuickOSM](/assets/quickosm.png)
 
-{% hint style='Tip' %}
+{% hint style='tip' %}
 En realidad, QuickOSM es otra interfaz distinta para Overpass, pero a diferencia de Overass Turbo, que es una interfaz vía web, QuickOSM es una interfaz integrada en QGIS.
 {% endhint %}
 
@@ -131,7 +131,7 @@ Del mismo modo que ocurría con OverpassTurbo debemos especificar el alcance geo
 
 Dentro de los parámetros advanced podremos especificar si queremos descargarnos únicamente puntos, líneas o polígonos o todos. 
 
-{% hint %}
+{% hint style='danger'%}
 Una de las configuraciones más importantes que debemos rellenar es la de `Directory`. Allí especificaremos en qué directorio queremos que se almacene el archivo o archivos que contiene los datos de nuestra consulta y cómo queremos que se llame. Si no lo hacemos, QuickOSM guardará el archivo en una carpeta temporal, con lo cual si no hacemos nada más, ese archivo se perderá la próxima vez que abramos el proyecto de QGIS.
 {% endhint %}
 
