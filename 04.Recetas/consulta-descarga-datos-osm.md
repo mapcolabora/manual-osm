@@ -117,6 +117,24 @@ QuickOSM es un plugin para QGIS 2.18 que realiza consultas Overpass de forma muy
 
 ![Captura de pantalla de QuickOSM](/assets/quickosm.png)
 
+{% hint style='Tip' %}
+En realidad, QuickOSM es otra interfaz distinta para Overpass, pero a diferencia de Overass Turbo, que es una interfaz vía web, QuickOSM es una interfaz integrada en QGIS.
+{% endhint %}
+
+En la pantalla inicial (`Quick Query`) se muestra un cuadro de diálogo que nos pregunta una serie de campos con los que estamos familiarizados: se trata de los campos  `Key` y `Value` que hemos visto anteriormente.  Al igual que con OverpassTurbo deberemos rellenar necesariamente el campo `Key` con la etiqueta que queramos consultar. Como en OverpassTurbo, el campo `Value` es opcional, y podemos especificar un valor o bien dejarlo vacío para solicitar que se descarguen todos los valores posibles para la clave especificada (lo que en Overpass Turbo equivalía a indicar un `*` como valor comodín).
+
+Del mismo modo que ocurría con OverpassTurbo debemos especificar el alcance geográfico de nuestra consulta, y para ello deberemos indicar una de las opciones que tenemos a continuación:
+1. Escribir el nombre de la región donde queremos buscar (ciudad, provincia, país...)
+2. Utilizar la extensión del mapa (esto es: a partir de lo que estemos visualizando en el mapa en ese momento)
+3. Utilizar los límites de una capa que hayamos insertado previamente en QGIS.
+
+Dentro de los parámetros advanced podremos especificar si queremos descargarnos únicamente puntos, líneas o polígonos o todos. 
+
+{% hint %}
+Una de las configuraciones más importantes que debemos rellenar es la de `Directory`. Allí especificaremos en qué directorio queremos que se almacene el archivo o archivos que contiene los datos de nuestra consulta y cómo queremos que se llame. Si no lo hacemos, QuickOSM guardará el archivo en una carpeta temporal, con lo cual si no hacemos nada más, ese archivo se perderá la próxima vez que abramos el proyecto de QGIS.
+{% endhint %}
+
+
 
 ## Resumen
 
